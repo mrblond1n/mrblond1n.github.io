@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Web-site for resume</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<section class="header" id="header">
+
+			<div class="logo">
+				<h1 class="title">Developer`s <br><span>HTML5/CSS3</span><br> portfolio</h1>
+			</div>
+
+			<div class="myName"><h1>Nikita Loft</h1></div>
+
+			<nav>
+				<ul>
+					<li><a class="scrollto" href="#about">About me</a></li>
+					<li><a class="scrollto" href="#portfolio">Portfolio</a></li>
+					<li><a class="scrollto" href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+
+		</section>
+	</header>
+	<main>
+		<a class="scrollto" href="#header" id='element'><button class="to-top"><span class="fa fa-arrow-up fa-3x"></span></button></a>
+
+		<section class="about" id="about">
+			<div class="wrapper">
+				<h1>About <span>me</span></h1>
+				<div class="photo"><img src="images/photo.png" alt="Author`s photo"></div>
+				<p>My name is Nikita Kirdiapin. I`m from Moscow, Russia and 23 old. I'm glad to see you in my website :) <br>
+				I`m learning to HTML/CSS/JS myself(front-end and back-end). Example to my work you can see below. Welcome!!!</p>
+			</div>
+		</section>
+
+		<section class="portfolio" id="portfolio">
+			<div class="wrapper">
+				<h1>My <span>Portfolio</span></h1>
+				<ul class="gallery">
+					<li><iframe width="560" height="315" src="https://www.youtube.com/embed/n_-R9xpqbN8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+					<li><iframe width="560" height="315" src="https://www.youtube.com/embed/aQ3l5_0YRIQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+					<li><iframe width="560" height="315" src="https://www.youtube.com/embed/ztYFVD1j6_Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+					<li><iframe width="560" height="315" src="https://www.youtube.com/embed/PICgp8l4ZPQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+				</ul>
+			</div>
+		</section>
+
+	</main>
+	<footer>
+
+		<section class="contact" id="contact">
+			<div class="wrapper">
+				<h1><span>Search me</span> to:</h1>
+					<ul class="social-group">
+						<li><a href="https://vk.com/ipestilenz"><p><span class="fa fa-vk"></span> Vkontakte</p></a></li>
+						<li><a href="https://www.instagram.com/impersonal/"><p><span class="fa fa-instagram"></span> Instagramm</p></a></li>
+						<li><a href="https://t.me/RollyScrolly"><p><img src="images/telegram.svg" alt=""> Telegram @RollyScrolly</p></a></li>
+						<li><a href="https://github.com/mrblond1n"><p><span class="fa fa-github-alt"></span> github</p></a></li>
+					</ul>
+			</div>
+		</section>
+
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script>
+	$(document).ready(function() {
+	  $("a.scrollto").click(function () {
+	    elementClick = $(this).attr("href")
+	    destination = $(elementClick).offset().top;
+	    $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
+	    return false;
+	  });
+	});
+	</script>
+</body>
+</html>
