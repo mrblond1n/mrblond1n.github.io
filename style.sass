@@ -1,8 +1,13 @@
-$primary-color: #f7a63e
-$primary-text-color: #7c7873
-$first-fon-color: #000
-$second-fon-color: #fff
-$header-ff: 'Snell Roundhand'
+$primary-color: #29241E
+$primary-text-color: #FEFFF8
+$first-fon-color: #D05a00
+// $second-fon-color: url(images/fon.png)
+$second-fon-color: rgb(81, 84, 93)
+$font: 'Dense'
+
+// color: #000
+// color: 
+// color: 
 
 // GENERAL
 
@@ -11,6 +16,8 @@ $header-ff: 'Snell Roundhand'
 	margin: 0
 	padding: 0
 	color: $primary-text-color
+	font-family: $font
+	text-shadow: 1px 3px 5px black
 
 ul
 	list-style: none
@@ -20,6 +27,8 @@ a
 	&:hover
 		border-bottom: 3px solid $primary-color
 		padding-bottom: 5px
+		color: #ddd
+
 .gallery li > a
 	border: none
 
@@ -53,7 +62,6 @@ span
 
 header
 	background: $first-fon-color
-	font-family: $header-ff
 	.header
 		width: 90%
 		margin: 0 auto
@@ -66,10 +74,10 @@ header
 			grid-gap: 10px
 
 .logo
-	font-family: 'Stint Ultra Expanded'
+	font-size: 24px
 
 .myName
-	font-size: 30px
+	font-size: 44px
 	margin-right: 40px
 
 nav ul li
@@ -82,8 +90,8 @@ nav ul li
 main, footer
 	background: $second-fon-color
 	h1
-		font-family: $header-ff
-		font-size: 30px
+		font-size: 50px
+		letter-spacing: 3px
 		padding-bottom: 50px
 		&:after
 			content: ''
@@ -98,10 +106,11 @@ main, footer
 
 .about
 	padding: 50px 0 30px 0
+	font-size: 26px
 	.photo img
 		width: 200px
 		border: 2px solid $primary-color
-		box-shadow: 0 0 5px 2px $first-fon-color
+		box-shadow: 0 0 10px 2px black
 		margin-bottom: 30px
 
 // PORTFOLIO
@@ -122,6 +131,9 @@ main, footer
 			transform: translateY(-10px)
 			transition: 1s
 			box-shadow: 0 0 5px 2px #fff
+		img
+			height: 100%
+			width: 500px
 
 // CONTACT
 
@@ -129,11 +141,11 @@ main, footer
 	padding: 50px 0 50px 0
 
 .contact img
-	width: 15px
+	width: 20px
 
 .social-group
-	font-family: 'Stint Ultra Expanded'
 	letter-spacing: 3px
+	font-size: 28px
 	text-align: left
 	display: flex
 	flex-wrap: wrap
@@ -147,7 +159,7 @@ main, footer
 		transition: all 0.5s ease-in-out
 		&:hover
 			background: $primary-color
-			box-shadow: 0 0 5px 1px $first-fon-color
+			box-shadow: 0 0 5px 1px white
 
 
 
