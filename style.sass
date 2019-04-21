@@ -1,13 +1,7 @@
 $primary-color: #29241E
 $primary-text-color: #FEFFF8
-$first-fon-color: #D05a00
-// $second-fon-color: url(images/fon.png)
-$second-fon-color: rgb(81, 84, 93)
+$first-fon-color: linear-gradient(to top, #000, #fff)
 $font: 'Dense'
-
-// color: #000
-// color: 
-// color: 
 
 // GENERAL
 
@@ -18,6 +12,9 @@ $font: 'Dense'
 	color: $primary-text-color
 	font-family: $font
 	text-shadow: 1px 3px 5px black
+
+body
+	background: $first-fon-color
 
 ul
 	list-style: none
@@ -55,13 +52,13 @@ button
 	text-align: center
 	color: $primary-text-color
 
-span
+span:not(.fa)
 	color: $primary-color
+	text-shadow: 1px 3px 5px white
 
 // HEADER
 
 header
-	background: $first-fon-color
 	.header
 		width: 90%
 		margin: 0 auto
@@ -88,7 +85,6 @@ nav ul li
 // MAIN
 
 main, footer
-	background: $second-fon-color
 	h1
 		font-size: 50px
 		letter-spacing: 3px
@@ -116,14 +112,12 @@ main, footer
 // PORTFOLIO
 
 .portfolio
-	background: $first-fon-color
 	padding: 50px 0 50px 0
 .gallery
 	display: flex
 	flex-wrap: wrap
 	justify-content: space-around
 	li
-		border: 2px solid $primary-color
 		margin: 30px
 		cursor: pointer
 		transition: all 0.5s ease-in-out
@@ -151,14 +145,14 @@ main, footer
 	flex-wrap: wrap
 	justify-content: space-around
 	span
-		color: #000
+		color: #fff
 	li
 		display: block
 		padding: 10px
 		border-bottom: 2px solid $primary-color
+		border-radius: 10px
 		transition: all 0.5s ease-in-out
 		&:hover
-			background: $primary-color
 			box-shadow: 0 0 5px 1px white
 
 
