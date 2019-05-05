@@ -1,0 +1,89 @@
+.header
+  background: url(/choco_project/images/header-images/bars.png) no-repeat 85% 60%,
+  url(/choco_project/images/header-images/pattern.png) no-repeat 100% 100%, 
+  url(/choco_project/images/header-images/bg.png)
+  background-size: auto, auto, auto
+  color: white
+  font-family: 'Alegreya Sans', regular
+  padding-top: 25px
+  height: 100vh
+  box-sizing: border-box
+
+ul
+  list-style: none
+
+a
+  text-decoration: none
+  color: #ffffff
+
+
+.fixed-navbar
+  position: fixed
+  top: 200px
+  right: 50px
+  ul li
+    margin-top: 10px
+    padding: 0 6px 1px 6px
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 1px solid #ffffff
+    border-color: transparent
+    &:before
+      content: url(/choco_project/images/ellipse.png)
+    &:hover, &:focus
+      border: 1px solid #ffffff
+      border-radius: 100%
+      cursor: pointer
+
+
+
+.header__nav
+  display: grid
+  grid-template-columns: auto 70% auto
+  align-items: center
+  white-space: nowrap
+  .logo
+    font-family: 'Museo Sans Cyrl'
+    font-weight: 500
+    font-size: 24px
+  .navigation ul
+    display: flex
+    justify-content: space-around
+    li
+      font-size: 18px
+  .contact p
+    font-size: 24px
+    margin-left: 40px
+    span
+      font-size: 16px
+
+.order
+  padding-top: 100px
+  .order__title
+    font-size: 60px
+    text-transform: uppercase
+  .order__disc
+    font-size: 21px
+    padding: 5px 0 35px 0
+  .btn-order
+    font-size: 19px
+    font-weight: bolder
+    padding: 1em 2em
+    border-radius: 2em
+    text-transform: uppercase
+    color: #0f5a47
+
+.about-product
+  padding-top: 90px
+  display: flex
+  .item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-right: 35px
+    font-size: 16px
+    z-index: 2
+    p
+      align-self: flex-start
+      margin-left: 10px
