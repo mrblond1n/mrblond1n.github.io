@@ -1,0 +1,74 @@
+.review
+  background: #000
+  height: 100vh
+  &__flex-container
+    display: flex
+    // flex-direction: row-reverse
+    flex-wrap: wrap
+    .reviewer
+      width: 25%
+      height: 50vh
+      color: #ffffff
+      .reviewer__wrap
+        background: rgba(0,0,0,.5)
+        opacity: 0
+        .reviewer__content
+          padding: 50px 30px
+          display: flex
+          flex-direction: column
+          justify-content: space-around
+          min-height: 325px
+          &__name
+            font-size: 14px
+            font-family: $title-ff
+          &__article
+            text-align: left
+            font-size: 14px
+            font-weight: lighter
+            line-height: 20px
+            font-family: $primary-ff
+          &__about
+            align-self: flex-start
+            padding: 10px 20px
+            background: #2f3234
+            border: none
+            font-size: 13px
+            text-transform: uppercase
+            color: #ffffff
+            font-weight: 500
+            cursor: pointer
+            font-family: $primary-ff
+            &:hover
+              background: transparent
+        &:hover
+          opacity: 1   
+    .reviewer_1
+      background: url(/Images/main/reviews/photo-8.png) no-repeat 50% 20%
+      background-size: cover
+    .reviewer_2
+      background: url(/Images/main/reviews/photo-6.png) no-repeat 50% 10%
+      background-size: cover
+    .reviewer_3
+      background: url(/Images/main/reviews/photo-4.png) no-repeat 55% 10%
+      background-size: cover
+    .reviewer_4
+      background: url(/Images/main/reviews/photo-2.png) no-repeat 100% 40%
+      background-size: cover
+    .reviewer_5
+      background: url(/Images/main/reviews/photo-7.png) no-repeat
+      background-size: cover
+    .reviewer_6
+      background: url(/Images/main/reviews/photo-5.png) no-repeat 80% 0%
+      background-size: cover
+    .reviewer_7
+      background: url(/Images/main/reviews/photo-3.png) no-repeat 55% 30%
+      background-size: cover
+    .reviewer_8
+      background: url(/Images/main/reviews/photo-1.png) no-repeat 90% 50%
+      background-size: cover
+
+      
+
+
+
+
