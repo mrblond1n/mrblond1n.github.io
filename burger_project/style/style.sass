@@ -10,18 +10,32 @@ $primary-ff: 'Ubuntu', light
 .points
   display: flex
   flex-direction: column
-
-   
-
-  .point
-    margin-top: 10px
-    color: #fff
-    padding: 0 4px
+  .point a:before
+    content: ''
+    position: relative
+    left: 10.5px
+    top: 4.5px
+    display: inline-block
+    width: 14px
+    height: 14px
     background: transparent
-    border: 1px solid transparent
     border-radius: 50%
-    &:hover
-      border-color: #ffffff
+    margin-top: 15px
+    border: 1px solid transparent
+  .point:hover a:before
+    border-color: #ffffff
+  .point a:after
+    content: ''
+    display: inline-block
+    width: 6px
+    height: 6px
+    background: #fff
+    border-radius: 50%
+    margin-top: 15px
+  
+
+
+
 
   
 *

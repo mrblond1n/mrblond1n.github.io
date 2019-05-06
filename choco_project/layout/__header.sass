@@ -1,7 +1,5 @@
 .header
-  background: url(/choco_project/images/header-images/bars.png) no-repeat 85% 60%,
-  url(/choco_project/images/header-images/pattern.png) no-repeat 100% 100%, 
-  url(/choco_project/images/header-images/bg.png)
+  background: url(../images/header-images/bars.png) no-repeat 95% 60%, url(../images/header-images/pattern.png) no-repeat 100% 100%, url(../images/header-images/bg.png)
   background-size: auto, auto, auto
   color: white
   font-family: 'Alegreya Sans', regular
@@ -17,24 +15,36 @@ a
   color: #ffffff
 
 
-.fixed-navbar
+.posfixed
   position: fixed
-  top: 200px
+  top: 30%
   right: 50px
-  ul li
-    margin-top: 10px
-    padding: 0 6px 1px 6px
-    display: flex
-    justify-content: center
-    align-items: center
-    border: 1px solid #ffffff
-    border-color: transparent
-    &:before
-      content: url(/choco_project/images/ellipse.png)
-    &:hover, &:focus
-      border: 1px solid #ffffff
-      border-radius: 100%
-      cursor: pointer
+
+.points
+  display: flex
+  flex-direction: column
+  .point a:before
+    content: ''
+    position: relative
+    left: 10.5px
+    top: 4.5px
+    display: inline-block
+    width: 14px
+    height: 14px
+    background: transparent
+    border-radius: 50%
+    margin-top: 15px
+    border: 1px solid transparent
+  .point:hover a:before
+    border-color: #ffffff
+  .point a:after
+    content: ''
+    display: inline-block
+    width: 6px
+    height: 6px
+    background: #fff
+    border-radius: 50%
+    margin-top: 15px
 
 
 
