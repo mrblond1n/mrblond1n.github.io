@@ -73,7 +73,7 @@ ul > li {
     margin-top: 15px; }
 
 .header {
-  background: url(../Images/header/bg_3.png) no-repeat, url(../Images/header/bg_2.png) no-repeat, url(../Images/header/bg_1.png) no-repeat;
+  background: url(../images/header/bg_3.png) no-repeat, url(../images/header/bg_2.png) no-repeat, url(../images/header/bg_1.png) no-repeat;
   background-size: cover, cover, cover; }
 
 .navbar {
@@ -209,28 +209,28 @@ ul > li {
   font-size: 14px; }
 
 .review__flex-container .reviewer_1 {
-  background: url(../Images/main/reviews/photo-8.png) no-repeat 50% 20%;
+  background: url(../images/main/reviews/photo-8.png) no-repeat 50% 20%;
   background-size: cover; }
 .review__flex-container .reviewer_2 {
-  background: url(../Images/main/reviews/photo-6.png) no-repeat 50% 10%;
+  background: url(../images/main/reviews/photo-6.png) no-repeat 50% 10%;
   background-size: cover; }
 .review__flex-container .reviewer_3 {
-  background: url(../Images/main/reviews/photo-4.png) no-repeat 55% 10%;
+  background: url(../images/main/reviews/photo-4.png) no-repeat 55% 10%;
   background-size: cover; }
 .review__flex-container .reviewer_4 {
-  background: url(../Images/main/reviews/photo-2.png) no-repeat 100% 40%;
+  background: url(../images/main/reviews/photo-2.png) no-repeat 100% 40%;
   background-size: cover; }
 .review__flex-container .reviewer_5 {
-  background: url(../Images/main/reviews/photo-7.png) no-repeat;
+  background: url(../images/main/reviews/photo-7.png) no-repeat;
   background-size: cover; }
 .review__flex-container .reviewer_6 {
-  background: url(../Images/main/reviews/photo-5.png) no-repeat 80% 0%;
+  background: url(../images/main/reviews/photo-5.png) no-repeat 80% 0%;
   background-size: cover; }
 .review__flex-container .reviewer_7 {
-  background: url(../Images/main/reviews/photo-3.png) no-repeat 55% 30%;
+  background: url(../images/main/reviews/photo-3.png) no-repeat 55% 30%;
   background-size: cover; }
 .review__flex-container .reviewer_8 {
-  background: url(../Images/main/reviews/photo-1.png) no-repeat 90% 50%;
+  background: url(../images/main/reviews/photo-1.png) no-repeat 90% 50%;
   background-size: cover; }
 
 .btn {
