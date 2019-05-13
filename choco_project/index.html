@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Choco Landing</title>
-  <link rel="stylesheet" href="layout/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -24,18 +24,14 @@
               <li><a href="#">Контакты</a></li>
             </ul>
           </div>
-          <div class="contact">
-            <p><span class="fa fa-phone"></span> 8 800 903 90 90</p>
-          </div>
+          <a href="tel: +88009039090" class="contact"><span class="fa fa-phone"></span>  8 800 903 90 90</a>
         </section>
         <section class="order">
-          <h1 class="order__title">натуральные<br>
-              шоколадные<br>
-              батончики</h1>
-          <p class="order__disc">Наши батончики идеально подходят для <br>
-              тех, кто следит за своим здоровьем</p>
-          <button class="btn-order">Заказать</button>
+          <h1 class="order__title">натуральные шоколадные батончики</h1>
+          <p class="order__disc">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p>
+          <a class="btn btn-order">Заказать</a>
         </section>
+        
         <section class="about-product">
           <div class="about-product__product item">
             <img src="images/header-images/icon_1.png" alt="">
@@ -79,9 +75,11 @@
 
       <section class="about-us" id="about-us">
           <div class="wrapper">
-            <h1 class="title">почему chocco?</h1>
-            <p>В нашем мире все происходит очень быстро, поэтому мы<br>
+            <div class="about-us__desc">
+              <h1 class="title">почему chocco?</h1>
+              <p class="subtitle">В нашем мире все происходит очень быстро, поэтому мы<br>
               делаем батончики, которые удобно взять с собой.</p>
+            </div>
             <div class="about-us__cards">
               <div class="about-us__cards-card">
                 <div class="about-us__cards-card__icon"><img src="images/bg_about-us/about_icon_1.png" alt=""></div>
@@ -121,17 +119,16 @@
             <div class="wrapper">
               <h1 class="title">отзывы</h1>
               <div class="review__slider">
-                <div class="review__slider-photo__reviewer"><img src="images/slider-review/thinker1.png" alt=""></div>
-                <div class="review__slider-content__reviewer">
-                  <h3 class="review__slider-content__reviewer-title">Лучший перекус</h3>
-                  <p class="review__slider-content__reviewer-text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером 
-                      и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно 
-                      и удобно. 
+                <div class="photo__reviewer"><img src="images/slider-review/thinker1.png" alt=""></div>
+                <div class="content__reviewer">
+                  <h3 class="content__reviewer-title">Лучший перекус</h3>
+                  <p class="content__reviewer-text">
+                    Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. 
                   </p>
-                  <p class="review__slider-content__reviewer-name">Алёна Хмельницкая</p>
+                  <div class="content__reviewer-name">Алёна Хмельницкая</div>
                 </div>
               </div>
-              <div class="review__slider-radio__btn">
+              <div class="radio__btn">
                 <label for="first_thinker">
                   <input checked type="radio" name="thinkers" class="checkbox_thinker" id="first_thinker">
                   <div class="avatar-thinker thinker-1"></div>
@@ -160,6 +157,6 @@
 
 
 
-  <!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

@@ -1,24 +1,32 @@
-.about-us
-  background: url(../Images/main/about-us/bg.png) no-repeat
-  background-size: cover
-  padding: 170px 0 170px 0
+.best 
+  background: url(../images/main/about-us/bg.png) center center / cover no-repeat
   text-align: center
-  height: 100vh
-  &__cards
-    display: flex
-    justify-content: space-around
-    .card
-      // padding: 60px
-      max-width: 285px
-      h3
-        font-size: 24px
-        margin: 40px 0 30px 0
-        font-family: $subtitle-ff
-      p
-        font-size: 14px
-        color: #999695
-        line-height: 25px
-        font-family: $primary-ff
 
-.title
-  color: #2f3234
+.feature__list
+  display: flex
+  align-items: flex-start
+  margin-bottom: 80px
+  
+
+.best__item
+  flex: 1
+  margin-right: 10px
+  width: 30%
+  &:last-child
+    margin-right: 0
+
+
+.feature__title
+  font-family: $lifehack
+  font-size: 24px
+  color: $black
+
+.feature__text
+  font-size: 14px
+
+
+
+.feature__pic
+  display: flex
+  margin-bottom: 10px
+  justify-content: center

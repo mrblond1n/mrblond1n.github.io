@@ -1,67 +1,17 @@
-$title-ff: 'Gagalin', regular
-$subtitle-ff: 'Lifehack', medium
-$primary-ff: 'Ubuntu', light
-
-.posfixed
-  position: fixed
-  top: 90px
-  right: 50px
-
-.points
-  display: flex
-  flex-direction: column
-  .point a:before
-    content: ''
-    position: relative
-    left: 10.5px
-    top: 4.5px
-    display: inline-block
-    width: 14px
-    height: 14px
-    background: transparent
-    border-radius: 50%
-    margin-top: 15px
-    border: 1px solid transparent
-  .point:hover a:before
-    border-color: #ffffff
-  .point a:after
-    content: ''
-    display: inline-block
-    width: 6px
-    height: 6px
-    background: #fff
-    border-radius: 50%
-    margin-top: 15px
-  
+$gagalin: 'Gagalin', regular
+$lifehack: 'Lifehack', medium
+$ubuntu: 'Ubuntu', light
 
 
+//colors
+$orange: #e45028
+$hover-orange: #c1401e
+$yellow: #f9b43b
+$black: #2f3234 
 
 
-  
-*
-  margin: 0
-  padding: 0
-
-.wrapper
-  width: 80%
-  margin: 0 auto
-
-a
-  text-decoration: none
-  color: #fff
-
-ul
-  list-style: none
-
-.title
-  font-size: 72px
-  text-transform: uppercase
-  margin-bottom: 50px
-  font-family: $title-ff
-
-.posrel_item
-  position: relative  
-
+@import '__normalize.sass'
 @import '__header.sass'
 @import '__about-us.sass'
 @import '__review.sass'
+@import '__buttons-links-inputs.sass'

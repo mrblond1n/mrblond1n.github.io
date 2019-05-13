@@ -2,24 +2,13 @@
   background: url(../images/header-images/bars.png) no-repeat 95% 60%, url(../images/header-images/pattern.png) no-repeat 100% 100%, url(../images/header-images/bg.png)
   background-size: auto, auto, auto
   color: white
-  font-family: 'Alegreya Sans', regular
-  padding-top: 25px
-  height: 100vh
+  font-family: $alegreya
   box-sizing: border-box
-
-ul
-  list-style: none
-
-a
-  text-decoration: none
-  color: #ffffff
-
 
 .posfixed
   position: fixed
   top: 30%
   right: 50px
-
 .points
   display: flex
   flex-direction: column
@@ -49,12 +38,13 @@ a
 
 
 .header__nav
+  padding: 25px 0 100px
   display: grid
   grid-template-columns: auto 70% auto
   align-items: center
   white-space: nowrap
   .logo
-    font-family: 'Museo Sans Cyrl'
+    font-family: $museo
     font-weight: 500
     font-size: 24px
   .navigation ul
@@ -62,31 +52,31 @@ a
     justify-content: space-around
     li
       font-size: 18px
-  .contact p
+  .contact
     font-size: 24px
     margin-left: 40px
     span
       font-size: 16px
 
 .order
-  padding-top: 100px
-  .order__title
-    font-size: 60px
-    text-transform: uppercase
-  .order__disc
-    font-size: 21px
-    padding: 5px 0 35px 0
-  .btn-order
-    font-size: 19px
-    font-weight: bolder
-    padding: 1em 2em
-    border-radius: 2em
-    text-transform: uppercase
-    color: #0f5a47
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  flex: 1
+  width: 50%
+  align-items: flex-start
+.order__title
+  font-size: 60px
+  text-transform: uppercase
+.order__disc
+  width: 70%
+  font-size: 21px
+  margin-bottom: 75px
 
 .about-product
-  padding-top: 90px
+  padding-bottom: 50px
   display: flex
+  align-self: flex-start
   .item
     display: flex
     justify-content: space-between
