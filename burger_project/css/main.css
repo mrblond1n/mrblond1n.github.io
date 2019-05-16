@@ -11,17 +11,17 @@
   font-style: normal; }
 @font-face {
   font-family: "Ubuntu";
-  src: url("../fonts/Ubuntu-Light.woff") format("woff");
+  src: url("../fonts/Ubuntu-Light.woff") format("woff"), url("../fonts/ubuntu-light-webfont.woff2") format("woff2");
   font-weight: 300;
   font-style: normal; }
 @font-face {
   font-family: "Ubuntu";
-  src: url("../fonts/Ubuntu-Medium.woff") format("woff");
+  src: url("../fonts/Ubuntu-Medium.woff") format("woff"), url("../fonts/ubuntu-medium-webfont.woff2") format("woff2");
   font-weight: 500;
   font-style: normal; }
 @font-face {
   font-family: "Ubuntu";
-  src: url("../fonts/ubuntu-b-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu-b-webfont.woff") format("woff"), url("../fonts/ubuntu-bold-webfont.woff2") format("woff2");
   font-weight: bold;
   font-style: normal; }
 html,
@@ -34,8 +34,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  font-family: "Ubuntu";
-  color: #2f3234; }
+  font-family: "Ubuntu", regular;
+  font-weight: 300;
+  color: #2f3234;
+  letter-spacing: -0.6px; }
 
 .wrapper {
   position: relative;
@@ -54,7 +56,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: center; }
+  justify-content: center;
+  padding: 0 40px; }
 
 h1,
 h2,
@@ -64,7 +67,7 @@ h5,
 h6 {
   margin-top: 0;
   font-weight: normal;
-  font-family: "Gagalin"; }
+  font-family: "Gagalin", regular; }
 
 table {
   border-collapse: collapse;
@@ -101,7 +104,7 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 150px; }
+  margin-right: 50px; }
 
 .header__order-btn {
   margin-left: 15px; }
@@ -111,7 +114,8 @@ a {
   align-items: center; }
 
 .menu__link {
-  font-size: 13px; }
+  font-size: 13px;
+  font-weight: 500; }
 
 .menu__item {
   margin-right: 10px;
@@ -158,11 +162,11 @@ a {
   align-items: center;
   margin-left: 30px; }
   .hero__content-text {
-    margin-left: 10px; }
+    margin: 80px 0 0 10px; }
 
 .hero__desc {
   font-size: 65px;
-  font-family: "Lifehack";
+  font-family: "Lifehack", medium;
   line-height: 1;
   color: white; }
 
@@ -170,31 +174,32 @@ a {
   background: url("../img/bg/best-bg.png") center center/cover no-repeat; }
 
 .about__list {
-  display: flex; }
+  display: flex;
+  margin-top: 30px;
+  justify-content: center; }
 
 .about__item {
-  flex: 1;
+  justify-content: center;
+  width: 30%;
   margin-right: 10px; }
   .about__item:last-child {
     margin-right: 0; }
 
 .about__item__desc {
   text-align: center; }
+  .about__item__desc h3 {
+    font-family: "Lifehack", medium;
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 40px 0 10px 0; }
+  .about__item__desc p {
+    font-size: 14px;
+    color: #2f3234; }
 
 .about__item__pic {
   display: flex;
   margin-bottom: 0px;
   justify-content: center; }
-
-.about__item__title {
-  font-family: "Lifehack";
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  padding: 40px 0 10px 0; }
-
-.about__item__text {
-  font-size: 14px; }
 
 .review {
   position: relative;
@@ -218,6 +223,13 @@ a {
   color: white;
   opacity: 0;
   transition: opacity 0.3s; }
+  .review__hover p {
+    line-height: 2;
+    padding-bottom: 15px;
+    font-size: 14px; }
+  .review__hover h3 {
+    text-transform: uppercase;
+    font-size: 14px; }
 
 .reviews__list {
   height: 100%;
@@ -228,15 +240,6 @@ a {
   width: 25%;
   height: 50%; }
 
-.review__text {
-  line-height: 2;
-  padding-bottom: 15px;
-  font-size: 14px; }
-
-.review__title {
-  text-transform: uppercase;
-  font-size: 14px; }
-
 .btn {
   padding: 10px 15px;
   border-radius: 5px;
@@ -246,13 +249,18 @@ a {
   font-size: 13px;
   font-weight: 500;
   display: inline-block;
-  text-decoration: none; }
+  transition: 0.2s;
+  border: none; }
+  .btn:hover {
+    cursor: pointer; }
   .btn--bg-black {
     background: #2f3234; }
+    .btn--bg-black:hover {
+      background: transparent; }
 
 .section-title {
   font-size: 72px;
-  margin-bottom: 45px;
+  margin-bottom: 25px;
   line-height: 1;
   color: #f9b43b; }
   .section-title--color-black {
