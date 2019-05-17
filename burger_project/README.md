@@ -1,2 +1,2 @@
 # Burger_project
-Burger theme for LoftSchool
+Burger theme by LoftSchool
