@@ -1,0 +1,58 @@
+.team
+  background: url('../img/bg/team-bg.png') center center / cover no-repeat
+  display: flex
+  justify-content: flex-end
+.team__container
+  display: flex
+  flex-direction: column
+  padding: 70px 100px
+  opacity: 0.93
+  background: rgb(40, 40, 40)
+  width: 50%
+  position: absolute
+
+
+.member__card
+  margin-top: 5px
+  color: #fff
+
+.member__name 
+  cursor: pointer
+  span
+    margin-right: 10px
+
+.member__photo
+  background: url('../img/people/aphex.png') center center / cover no-repeat
+  height: 100px
+  width: 100px
+  flex: none
+  border-radius: 50%
+  margin-right: 4%
+
+.member__details
+  display: flex
+  position: relative
+  bottom: 3px
+  left: 16px
+  height: 0
+  overflow: hidden
+
+.member__disc
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  font-size: 14px
+  max-width: 210px
+  line-height: 1.6
+  margin-bottom: 30px
+  b
+    margin-bottom: 15px
+
+
+.unscroll
+  .member__name
+    color: $yellow
+    span img
+      transform: rotate(180deg)
+  .member__details
+    height: 100%
