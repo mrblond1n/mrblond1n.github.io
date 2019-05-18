@@ -175,11 +175,11 @@ a {
   flex: 0.8;
   display: flex;
   align-items: center;
-  margin-left: 30px; }
+  margin-left: 30px;
+  justify-content: center; }
   @media screen and (max-width: 768px) {
     .hero__content {
       flex-direction: column;
-      padding: 40px 0 200px 0;
       margin: 0; } }
   .hero__content-text {
     margin: 80px 0 0 10px; }
@@ -196,9 +196,6 @@ a {
 
 .about {
   background: url("../img/bg/best-bg.png") center center/cover no-repeat; }
-  @media screen and (max-width: 768px) {
-    .about {
-      padding: 230px 0 370px 0; } }
 
 .about__list {
   display: flex;
@@ -513,7 +510,7 @@ address {
       justify-content: center; } }
 
 .form-order {
-  padding: 140px 0;
+  padding-top: 140px;
   background: url("../img/bg/form-bg.png") center center/cover no-repeat; }
 
 .form {
