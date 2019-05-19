@@ -18,8 +18,12 @@
 
 .member__name 
   cursor: pointer
-  span
-    margin-right: 10px
+  margin-left: 20px
+  margin-bottom: 5px
+
+.polygon
+  position: relative
+  top: 18px
 
 .member__photo
   background: url('../img/people/aphex.png') center center / cover no-repeat
@@ -27,13 +31,13 @@
   width: 100px
   flex: none
   border-radius: 50%
-  margin-right: 4%
+  margin-right: 6%
 
 .member__details
   display: flex
   position: relative
-  bottom: 3px
-  left: 16px
+  left: 17px
+  top: 10px
   height: 0
   overflow: hidden
 
@@ -44,7 +48,7 @@
   font-size: 14px
   max-width: 210px
   line-height: 1.6
-  margin-bottom: 30px
+  margin-bottom: 20px
   b
     margin-bottom: 15px
 
@@ -52,7 +56,7 @@
 .unscroll
   .member__name
     color: $yellow
-    span img
-      transform: rotate(180deg)
+  .polygon
+    transform: rotate(180deg)
   .member__details
     height: 100%

@@ -1,0 +1,51 @@
+.stock
+  background: url('../img/bg/menu-bg.png') center center / cover no-repeat
+  display: flex
+  justify-content: space-between
+  color: white
+  .section-title
+    margin: 105px
+
+.stock__item--meat
+  background: url('../img/bg/menu-bg1.png') center center / cover no-repeat
+.stock__item--vegan
+  background: url('../img/bg/menu-bg2.png') center center / cover no-repeat
+.stock__item--diet
+  background: url('../img/bg/menu-bg3.png') center center / cover no-repeat
+
+.stock__item h3
+  position: relative
+  bottom: 50px
+  margin: 0
+  color: white
+  font-size: 40px
+  transform: rotate(270deg)
+  white-space: nowrap
+
+.stock__list
+  display: flex
+  position: absolute
+  right: 0px
+  height: 100vh
+  min-height: 650px
+  .stock__item
+    display: flex
+    &--section
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      max-width: 80px
+    p
+      font-size: 14px
+      width: 0
+      overflow: hidden
+      background: rgba(#2f3234, .93)
+
+.active 
+  p
+    width: 540px !important
+    padding: 60px 5.4%
+    line-height: 1.75
+    letter-spacing: 0.1px
+  h3
+    color: $yellow
