@@ -117,8 +117,7 @@ a {
 .header__buttons {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  margin-right: 50px; }
+  align-items: center; }
 
 .header__order-btn {
   margin-left: 15px; }
@@ -167,10 +166,7 @@ a {
   transform: translateX(-50%); }
 
 .menu-hamburger {
-  display: none;
-  width: 24px;
-  height: 22px;
-  fill: white; }
+  display: none; }
   @media screen and (max-width: 768px) {
     .menu-hamburger {
       display: block; } }
@@ -273,7 +269,7 @@ a {
     .review__hover {
       text-align: center;
       align-items: center;
-      padding: 5px 5%; } }
+      padding: 25px 5%; } }
   @media screen and (max-width: 420px) {
     .review__hover {
       justify-content: center; } }
@@ -521,7 +517,6 @@ address {
       justify-content: center; } }
 
 .form-order {
-  padding-top: 140px;
   background: url("../img/bg/form-bg.png") center center/cover no-repeat; }
 
 .form {
@@ -614,9 +609,12 @@ textarea {
   height: 110px;
   border-radius: 5px;
   padding: 10px; }
+  @media screen and (max-width: 768px) {
+    textarea {
+      min-width: 225px; } }
 
 .button-group {
-  margin-left: 50%; }
+  margin-left: 52.5%; }
   @media screen and (max-width: 768px) {
     .button-group {
       margin: 0; } }
@@ -648,6 +646,7 @@ textarea {
     background: transparent;
     text-transform: none; }
   .btn--none-decor {
+    border: none;
     background: transparent; }
 
 .section-title {

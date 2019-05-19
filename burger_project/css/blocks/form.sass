@@ -7,7 +7,6 @@
     justify-content: center
   
 .form-order
-  padding-top: 140px
   background: url('../img/bg/form-bg.png') center center / cover no-repeat
 .form
   padding: 0 10%
@@ -93,9 +92,11 @@ textarea
   height: 110px
   border-radius: 5px
   padding: 10px
+  @media screen and (max-width: $laptops)
+    min-width: 225px
 
 .button-group
-  margin-left: 50%
+  margin-left: 52.5%
   @media screen and (max-width: $laptops)
     margin: 0
   @media screen and (max-width: $phones)

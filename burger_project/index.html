@@ -48,9 +48,9 @@
               </ul>
             </nav>
             <button type="button" class="btn header__order-btn">Заказать</button>
-            <button type="button" class="btn btn--none-decor">
-              <svg class="menu-hamburger">
-                <use xlink:href="./img/sprite.svg#menu-hamburger" width="24" height="22" />
+            <button type="button" class="menu-hamburger btn--none-decor">
+              <svg fill="#fff" width="24" height="22">
+                <use xlink:href="./img/sprite.svg#menu-hamburger"/>
               </svg>
             </button>
           </div>
@@ -67,7 +67,6 @@
           </div>
         </div>
         <a href="#" class="down-arrow">
-          <!-- <img src="./img/icons/arrow-scroll.svg" alt="arrow-scroll"> -->
           <svg fill="#fff" width="30" height="20">
             <use xlink:href="./img/sprite.svg#arrow-scroll-icon"></use>
           </svg>
@@ -357,6 +356,7 @@
     </section>
 
     <section class="section form-order">
+      <div class="container">
         <h1 class="section-title section-title--centered">Закажитe доставку</h1>
         <form action="" class="form">
           <div class="grid-container">
@@ -365,18 +365,18 @@
                 <label for="user-name">Имя <br>
                   <input type="text" id="user-name" class="first-column__first-row__mid">
                 </label>
-    
+        
                 <label for="user-phone">Телефон <br>
                   <input type="text" id="user-phone" class="first-column__first-row__mid">
                 </label>
               </div>
-    
+        
               <div class="first-column__second-row">
                 <label for="user-street">Улица <br>
                   <input type="text" id="user-street" class="first-column__second-row__long">
                 </label>
               </div>
-
+        
               <div class="first-column__third-row">
                 <label for="user-house">Дом <br>
                   <input type="text" id="user-house" class="first-column__third-row__short">
@@ -415,6 +415,7 @@
             <button class="btn btn--bg-transparent" type="reset">Очистить</button>
           </div>
         </form>
+      </div>
     </section>
 
     <section class="section map">
