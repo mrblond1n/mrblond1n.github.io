@@ -21,10 +21,14 @@ Copyright (c) 2015 by DearType, Veneta Rangelova. All rights reserved.
     bbox="-658 -469 2342 1083"
     underline-thickness="50"
 <<<<<<< HEAD
+<<<<<<< HEAD
     underline-position="-200"
 =======
     underline-position="-300"
 >>>>>>> week_2_form_section
+=======
+    underline-position="-200"
+>>>>>>> week_2-adaptive-phones
     unicode-range="U+0020-FB02"
   />
 <missing-glyph horiz-adv-x="500" 

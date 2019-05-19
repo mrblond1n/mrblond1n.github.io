@@ -9,6 +9,11 @@
   color: white
   font-size: 14px
   line-height: 24px
+  @media screen and (max-width: $phones)
+    flex-direction: column
+    text-align: center
+    // letter-spacing: -1px
+    padding: 10px 10px
 
 .footer__contacts
   display: flex
@@ -23,7 +28,7 @@ address
 .social__list
   display: flex
 
-.social__item
+.social__item:not(:first-of-type)
   margin-left: 20px
 
 .social__icon

@@ -1,12 +1,20 @@
 .grid-container
-  max-width: 940px
-  margin: 0 auto
   display: grid
   grid-template-columns: 50% 50%
+  grid-gap: 20px
+  @media screen and (max-width: $laptops)
+    grid-template-columns: 100%
+    justify-content: center
   
 .form-order
-  padding: 100px 0
+  padding-top: 140px
   background: url('../img/bg/form-bg.png') center center / cover no-repeat
+.form
+  padding: 0 10%
+  @media screen and (max-width: $laptops)
+    padding: 0 18%
+  @media screen and (max-width: $phones)
+    padding: 0 5%
 
 .first-column
   display: grid
@@ -20,7 +28,10 @@
     font-size: 16px
   label
     color: #ffffff
-    margin-right: 20px
+    &:not(:last-of-type)
+      margin-right: 10px
+    &:not(:first-of-type)
+      margin-left: 10px
 .first-column__first-row
   display: grid
   grid-template-columns: 50% 50%
@@ -37,6 +48,8 @@
 
 .second-column__second-row
   margin: 15px 0 15px 0
+  @media screen and (max-width: $phones)
+    text-align: center
   label:before
     content: ''
     margin-right: 10px
@@ -55,6 +68,7 @@
       background: #e35028
 
 .second-column__third-row
+  justify-content: center
   label:before
     content: ''
     margin-right: 10px
@@ -63,6 +77,8 @@
     height: 6px
     background: #ffffff
     border: 3px solid #fff
+  @media screen and (max-width: $phones)
+    text-align: center
 
 input[type="checkbox"]
   display: none
@@ -71,8 +87,6 @@ input[type="checkbox"]
     background: #e35028
 
 textarea
-  box-sizing: border-box
-  font-size: 16px
   margin-top: 5px
   resize: none
   width: 100%
@@ -82,6 +96,10 @@ textarea
 
 .button-group
   margin-left: 50%
+  @media screen and (max-width: $laptops)
+    margin: 0
+  @media screen and (max-width: $phones)
+    text-align: center
 
 .btn--order
   margin-top: 20px

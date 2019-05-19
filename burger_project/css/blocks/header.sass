@@ -16,6 +16,8 @@
 .menu__list 
   display: flex
   align-items: center
+  @media screen and (max-width: $laptops)
+    display: none
 
 .menu__link 
   font-size: 13px
@@ -52,3 +54,11 @@
   bottom: 40px
   left: 50%
   transform: translateX(-50%)
+
+.menu-hamburger
+  display: none
+  width: 24px
+  height: 22px
+  fill: #fff
+  @media screen and (max-width: $laptops)
+    display: block
