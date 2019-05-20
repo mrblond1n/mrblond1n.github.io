@@ -407,7 +407,7 @@ img {
   width: 3.125rem;
   height: 3.125rem;
   position: absolute;
-  bottom: 2.5rem;
+  bottom: -6.25rem;
   left: 50%;
   transform: translateX(-50%); }
 
