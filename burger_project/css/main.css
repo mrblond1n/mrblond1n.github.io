@@ -428,9 +428,14 @@ img {
 .hero__container {
   justify-content: flex-start; }
 
+@media screen and (max-width: 420px) {
+  .hero__content-image {
+    text-align: center; }
+    .hero__content-image img {
+      width: 80%; } }
+
 .hero__content {
   position: relative;
-  bottom: 50px;
   flex: 1;
   display: flex;
   align-items: center;

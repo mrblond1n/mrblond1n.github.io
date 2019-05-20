@@ -8,9 +8,18 @@
   justify-content: flex-start;
 }
 
+.hero__content-image {
+  @include phones {
+    text-align: center;
+    img {
+      width: 80%;
+    }
+  }
+}
+
 .hero__content {
   position: relative;
-  bottom: 50px;
+  // bottom: 10px;
   flex: 1;
   display: flex;
   align-items: center;
