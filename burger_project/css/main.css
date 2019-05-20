@@ -574,6 +574,7 @@ img {
 
 .team__container {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   padding: 4.375rem 6.25rem;
   opacity: 0.93;
@@ -684,8 +685,7 @@ img {
 .stock__list {
   display: flex;
   position: relative;
-  min-height: 650px;
-  height: 100vh; }
+  min-height: 650px; }
 
 .stock__item {
   display: flex;
