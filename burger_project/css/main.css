@@ -413,9 +413,6 @@ img {
   bottom: -6.25rem;
   left: 50%;
   transform: translateX(-50%); }
-  @media screen and (max-width: 420px) {
-    .down-arrow {
-      display: none; } }
 
 .menu-hamburger {
   display: none; }
