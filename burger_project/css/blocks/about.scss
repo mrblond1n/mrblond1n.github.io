@@ -1,0 +1,46 @@
+.about {
+  background: url("../img/bg/best-bg.png") center (center / cover) no-repeat;
+}
+
+.about__list {
+  display: flex;
+  margin-top: rem(30px);
+  justify-content: center;
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.about__item {
+  justify-content: center;
+  width: 30%;
+  margin-right: rem(10px);
+  @include phones {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.about__item__desc {
+  text-align: center;
+  h3 {
+    font-family: $lifehack;
+    font-size: rem(24px);
+    margin-bottom: rem(10px);
+    padding: rem(40px) 0 rem(10px) 0;
+  }
+  p {
+    font-size: rem(14px);
+    color: #2f3234;
+  }
+}
+
+.about__item__pic {
+  display: flex;
+  margin-bottom: 0px;
+  justify-content: center;
+}

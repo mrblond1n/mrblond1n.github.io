@@ -11,9 +11,7 @@
 
 <body>
 
-
   <div class="wrapper">
-
 
     <section class="section hero">
       <div class="hero__container container">
@@ -196,11 +194,12 @@
 
     <section class="section stock">
       <h2 class="section-title section-title--color-white">Меню</h2>
-      <ul class="stock__list">
-        <li class="stock__item active">
-          <a href="#" class="stock__item--section stock__item--meat">
-            <h3> Для мясоедов </h3>
-          </a>
+      <div class="container-accordeon">
+        <ul class="stock__list">
+          <li class="stock__item active">
+            <a href="#" class="stock__item--section stock__item--meat">
+              <h3> Для мясоедов </h3>
+            </a>
             <p>
               Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
               механизм
@@ -216,48 +215,49 @@
               к
               слову.
             </p>
-        </li>
-        <li class="stock__item">
-          <a href="#" class="stock__item--section stock__item--vegan">
-            <h3> Вегетарианское </h3>
-          </a>
-          <p>
-            Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
-            механизм
-            сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться
-            к
-            слову,
-            однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин,
-            пространственно
-            выбирает метр.
-            Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
-            механизм
-            сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться
-            к
-            слову.
-          </p>
-        </li>
-        <li class="stock__item">
-          <a href="#" class="stock__item--section stock__item--diet">
-            <h3> диетическое </h3>
-          </a>
-          <p>
-            Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
-            механизм
-            сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться
-            к
-            слову,
-            однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин,
-            пространственно
-            выбирает метр.
-            Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
-            механизм
-            сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться
-            к
-            слову.
-          </p>
-        </li>
-      </ul>
+          </li>
+          <li class="stock__item">
+            <a href="#" class="stock__item--section stock__item--vegan">
+              <h3> Вегетарианское </h3>
+            </a>
+            <p>
+              Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
+              механизм
+              сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться
+              к
+              слову,
+              однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин,
+              пространственно
+              выбирает метр.
+              Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
+              механизм
+              сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться
+              к
+              слову.
+            </p>
+          </li>
+          <li class="stock__item">
+            <a href="#" class="stock__item--section stock__item--diet">
+              <h3> диетическое </h3>
+            </a>
+            <p>
+              Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
+              механизм
+              сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться
+              к
+              слову,
+              однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин,
+              пространственно
+              выбирает метр.
+              Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
+              механизм
+              сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться
+              к
+              слову.
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
 
 
@@ -355,64 +355,62 @@
       </ul>
     </section>
 
-    <section class="section form-order">
+    <section class="section form">
       <div class="container">
         <h1 class="section-title section-title--centered">Закажитe доставку</h1>
-        <form action="" class="form">
-          <div class="grid-container">
-            <div class="first-column">
-              <div class="first-column__first-row">
-                <label for="user-name">Имя <br>
-                  <input type="text" id="user-name" class="first-column__first-row__mid">
-                </label>
-        
-                <label for="user-phone">Телефон <br>
-                  <input type="text" id="user-phone" class="first-column__first-row__mid">
-                </label>
-              </div>
-        
-              <div class="first-column__second-row">
-                <label for="user-street">Улица <br>
-                  <input type="text" id="user-street" class="first-column__second-row__long">
-                </label>
-              </div>
-        
-              <div class="first-column__third-row">
-                <label for="user-house">Дом <br>
-                  <input type="text" id="user-house" class="first-column__third-row__short">
-                </label>
-                <label for="user-housing">Корпус <br>
-                  <input type="text" id="user-housing" class="first-column__third-row__short">
-                </label>
-                <label for="user-apart">Квартира <br>
-                  <input type="text" id="user-apart" class="first-column__third-row__short">
-                </label>
-                <label for="user-level">Этаж <br>
-                  <input type="text" id="user-level" class="first-column__third-row__short">
-                </label>
-              </div>
+        <form action="" class="form-order" method="POST">
+          <div class="form-order__first-column">
+            <div class="first-column__first-row first-column__row">
+              <label for="user-name">Имя
+                <input type="text" id="user-name" class="first-column__first-row__mid">
+              </label>
+            
+              <label for="user-phone">Телефон
+                <input type="text" id="user-phone" class="first-column__first-row__mid">
+              </label>
             </div>
-            <div class="second-column">
-              <div class="second-column__first-row">
-                <label for="comment">Комментарий <br>
-                  <textarea name="" id="comment"></textarea>
-                </label>
-              </div>
-              <div class="second-column__second-row">
-                <input type="radio" name="pay-by" id="cash">
-                <label for="cash">Потребуется сдача</label>
-                <input type="radio" name="pay-by" id="card" checked>
-                <label for="card">Оплата по карте</label>
-              </div>
-              <div class="second-column__third-row">
-                <input type="checkbox" name="" id="dont-distrub">
-                <label for="dont-distrub">Не перезванивать</label>
-              </div>
+            
+            <div class="first-column__second-row first-column__row">
+              <label for="user-street">Улица
+                <input type="text" id="user-street" class="first-column__second-row__long">
+              </label>
+            </div>
+            
+            <div class="first-column__third-row first-column__row">
+              <label for="user-house">Дом
+                <input type="text" id="user-house" class="first-column__third-row__short">
+              </label>
+              <label for="user-housing">Корпус
+                <input type="text" id="user-housing" class="first-column__third-row__short">
+              </label>
+              <label for="user-apart">Квартира
+                <input type="text" id="user-apart" class="first-column__third-row__short">
+              </label>
+              <label for="user-level">Этаж
+                <input type="text" id="user-level" class="first-column__third-row__short">
+              </label>
             </div>
           </div>
-          <div class="button-group">
-            <button class="btn btn--order" type="submit">Заказать</button>
-            <button class="btn btn--bg-transparent" type="reset">Очистить</button>
+          <div class="form-order__second-column">
+            <div class="second-column__first-row">
+              <label for="comment">Комментарий
+                <textarea name="" id="comment"></textarea>
+              </label>
+            </div>
+            <div class="second-column__second-row">
+              <input type="radio" name="pay-by" id="cash">
+              <label for="cash">Потребуется сдача</label>
+              <input type="radio" name="pay-by" id="card" checked>
+              <label for="card">Оплата по карте</label>
+            </div>
+            <div class="second-column__third-row">
+              <input type="checkbox" name="" id="dont-distrub">
+              <label for="dont-distrub">Не перезванивать</label>
+            </div>
+            <div class="button-group">
+              <button class="btn btn--order" type="submit">Заказать</button>
+              <button class="btn btn--bg-transparent" type="reset">Очистить</button>
+            </div>
           </div>
         </form>
       </div>
@@ -460,9 +458,6 @@
       </footer>
     </section>
 
-    
-
-
   </div>
 
 
@@ -497,13 +492,5 @@
   </ul>
 
 
-
-
-
-
-
-
-
-  <!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
 </body>
 </html>

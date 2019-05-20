@@ -1,0 +1,50 @@
+.fixed-menu {
+  position: fixed;
+  right: 4%;
+  top: 10%;
+  @include laptops {
+    display: none;
+  }
+}
+
+.fixed-menu__item {
+  margin-bottom: 7px;
+}
+
+.fixed-menu__link {
+  width: 14px;
+  height: 14px;
+  display: block;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    border: 1px solid #fff;
+    opacity: 0;
+    transition: .4s;
+  }
+  &:after {
+    width: 6px;
+    height: 6px;
+    background: #fff;
+  }
+  &:hover:before {
+    width: 14px;
+    height: 14px;
+    opacity: 1;
+  }
+}

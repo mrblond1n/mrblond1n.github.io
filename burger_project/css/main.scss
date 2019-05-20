@@ -1,0 +1,51 @@
+// colors
+
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+
+// adaptive
+
+@mixin laptops {
+  @media screen and (max-width: $laptops) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}
+
+@function rem($px) {
+  @return $px / 16px + 0rem;
+}
+
+// breakpoints
+
+$laptops: 768px;
+$phones: 420px;
+
+// setups
+@import "setups/normalize.scss";
+@import "setups/fonts.scss";
+@import "setups/layout.scss";
+
+// blocks
+@import "blocks/header.scss";
+@import "blocks/hero.scss";
+@import "blocks/about.scss";
+@import "blocks/review.scss";
+@import "blocks/team.scss";
+@import "blocks/stock.scss";
+@import "blocks/footer.scss";
+@import "blocks/form.scss";
+@import "blocks/accordeon.sass";
+
+// misc
+@import "misc/btn.scss";
+@import "misc/section-title.scss";
+@import "misc/fixed-menu.scss";
+

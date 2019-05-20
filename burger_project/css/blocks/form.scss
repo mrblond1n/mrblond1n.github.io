@@ -1,0 +1,119 @@
+.form {
+  background: url('../img/bg/form-bg.png') center center / cover no-repeat;
+}
+
+.form-order {
+  display: flex;
+  justify-content: center;
+  @include laptops {
+    flex-direction: column;
+    max-width: 470px;
+    margin: 0 auto;
+  }
+}
+
+.form-order__first-column, .form-order__second-column {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  color: #ffffff;
+  &:not(:last-child) {
+    margin-right: 10px;
+    @include laptops {
+      margin: 0;
+    }
+  }
+  &:not(:first-child) {
+    margin-left: 10px;
+    @include laptops {
+      margin: 0;
+    }
+  }
+  input {
+    margin-top: 5px;
+    height: 35px;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px;
+  }
+  label {
+    width: 100%;
+    margin-bottom: 5px;
+    &:not(:last-of-type) {
+      margin-right: 10px;
+    }
+    &:not(:first-of-type) {
+      margin-left: 10px
+    }
+  }
+  textarea {
+  resize: none;
+  width: 100%;
+  height: 110px;
+  border-radius: 5px;
+  padding: 10px;
+  }
+}
+
+.first-column__row {
+  display: flex;
+}
+
+.second-column__second-row {
+  margin: 15px 0 15px 0;
+  @media screen and (max-width: $phones) {
+    text-align: center;
+  }
+  label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 3px solid #fff;
+  }
+  label:not(:first-of-type) {
+    margin-left: 20px;
+  }
+  input[type="radio"] {
+    display: none;
+    &:checked + label:before {
+      border-color: #ffffff;
+      background: $red;
+    }
+  }
+}
+
+.second-column__third-row {
+  justify-content: center;
+  input {
+    display: none;
+    &:checked + label:before {
+      border-color: #ffffff;
+      background: $red;
+    }
+  }
+  label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #ffffff;
+    border: 3px solid #fff;
+  }
+  @media screen and (max-width: $phones) {
+    text-align: center;
+  }
+}
+
+.button-group {
+  margin-top: 20px;
+  @media screen and (max-width: $phones) {
+    text-align: center;
+  }
+}
