@@ -43,6 +43,7 @@
 .stock__item {
   display: flex;
   max-width: 100%;
+  max-height: 100vh;
   p {
     display: block;
     font-size: rem(14px);

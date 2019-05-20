@@ -8,18 +8,9 @@
   justify-content: flex-start;
 }
 
-.hero__content-image {
-  @include phones {
-    text-align: center;
-    img {
-      width: 80%;
-    }
-  }
-}
-
 .hero__content {
   position: relative;
-  // bottom: 10px;
+  bottom: 50px;
   flex: 1;
   display: flex;
   align-items: center;
@@ -42,4 +33,13 @@
   font-family: $lifehack;
   line-height: 1;
   color: #fff;
+}
+
+.hero__content-image {
+  @include phones {
+    text-align: center;
+    img {
+      width: 80%;
+    }
+  }
 }

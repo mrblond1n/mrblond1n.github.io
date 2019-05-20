@@ -9,4 +9,8 @@
   &--centered {
     text-align: center;
   }
+  @include phones {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
 }

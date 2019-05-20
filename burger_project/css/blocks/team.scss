@@ -18,6 +18,9 @@
     width: 100%;
     text-align: center;
   }
+  @include phones {
+    padding: rem(35px) rem(60px);
+  }
 }
 
 .team__members {
@@ -38,8 +41,10 @@
   cursor: pointer;
   margin-left: 7px;
   margin-bottom: 25px;
-  @include laptops {
-    font-size: rem(24px);
+  font-size: 1.7rem;
+  @include phones {
+    font-size: rem(16px);
+    margin-bottom: 10px;
   }
 }
 
@@ -71,7 +76,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-size: rem(14px);
+  font-size: rem(16px);
   max-width: rem(210px);
   line-height: 1.6;
   margin-bottom: 20px;

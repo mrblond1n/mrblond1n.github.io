@@ -11,6 +11,9 @@
   &:hover {
     cursor: pointer;
   }
+  @include phones {
+    font-size: 8px;
+  }
 }
 
 .btn--bg-black {
