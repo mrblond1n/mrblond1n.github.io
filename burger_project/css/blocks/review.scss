@@ -26,22 +26,22 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  @media screen and (max-width: $laptops){
+  @include laptops{
     text-align: center;
     align-items: center;
     padding: 5% 5% 0;
   }
-  @media screen and (max-width: $phones) {
+  @include phones {
     justify-content: center;
   }
   p {
     line-height: 1.8;
     padding-bottom: rem(15px);
     font-size: rem(14px);
-    @media screen and (max-width: $laptops) {
+    @include laptops {
       font-size: rem(13px);
     }
-    @media screen and (max-width: $phones) {
+    @include phones {
       display: none;
     }
   }
@@ -60,7 +60,7 @@
 .reviews__item {
   width: 25%;
   height: 50%;
-  @media screen and (max-width: $laptops) {
+  @include laptops {
     width: 50%;
     height: 25%;
   }

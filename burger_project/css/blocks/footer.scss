@@ -9,7 +9,7 @@
   color: white;
   font-size: rem(14px);
   line-height: rem(24px);
-  @media screen and (max-width: $phones) {
+  @include phones {
     flex-direction: column;
     text-align: center;
     padding: rem(10px) rem(10px);

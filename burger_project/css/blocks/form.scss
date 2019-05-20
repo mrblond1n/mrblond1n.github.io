@@ -63,7 +63,7 @@
 
 .second-column__second-row {
   margin: 15px 0 15px 0;
-  @media screen and (max-width: $phones) {
+  @include phones {
     text-align: center;
   }
   label:before {
@@ -106,14 +106,14 @@
     background: #ffffff;
     border: 3px solid #fff;
   }
-  @media screen and (max-width: $phones) {
+  @include phones {
     text-align: center;
   }
 }
 
 .button-group {
   margin-top: 20px;
-  @media screen and (max-width: $phones) {
+  @include phones {
     text-align: center;
   }
 }
