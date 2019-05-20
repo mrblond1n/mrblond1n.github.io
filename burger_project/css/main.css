@@ -410,6 +410,9 @@ img {
   bottom: -6.25rem;
   left: 50%;
   transform: translateX(-50%); }
+  @media screen and (max-width: 420px) {
+    .down-arrow {
+      display: none; } }
 
 .menu-hamburger {
   display: none; }
@@ -420,13 +423,14 @@ img {
 .hero {
   background: url("../img/bg/hero-bg.png") center center/cover no-repeat;
   position: relative;
-  height: 100%;
   padding-bottom: 100px; }
 
 .hero__container {
   justify-content: flex-start; }
 
 .hero__content {
+  position: relative;
+  bottom: 50px;
   flex: 1;
   display: flex;
   align-items: center;
@@ -436,11 +440,11 @@ img {
       flex-direction: column;
       margin: 0; } }
   .hero__content-text {
-    margin: 5rem 0 0 0.625rem; }
+    margin: 2.5rem 0 0 0.625rem; }
     @media screen and (max-width: 768px) {
       .hero__content-text {
         text-align: center;
-        margin: 1.25rem 0; } }
+        margin: 0 0; } }
 
 .hero__desc {
   font-size: 4.0625rem;

@@ -64,6 +64,9 @@
   bottom: rem(-100px);
   left: 50%;
   transform: translateX(-50%);
+  @include phones {
+    display: none;
+  }
 }
 
 .menu-hamburger {
