@@ -23,14 +23,20 @@
   }
 }
 
+.logo {
+  z-index: 2;
+}
+
 .menu__link {
   font-size: rem(13px);
   font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .menu__item {
+  white-space: nowrap;
   margin-right: rem(10px);
-  text-transform: uppercase;
   display: flex;
   align-items: center;
   &:last-child {
@@ -50,12 +56,6 @@
   }
 }
 
-.menu__link {
-  font-size: rem(13px);
-  color: #fff;
-  text-transform: uppercase;
-}
-
 .down-arrow {
   display: block;
   width: rem(50px);
@@ -70,9 +70,49 @@
 }
 
 .menu-hamburger {
+  z-index: 2;
   display: none;
+  cursor: pointer;
   @include laptops {
     display: block
   }
 }
 
+
+.menu__list-fullscreen {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: rgba(#2f3234, .99);
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  .menu__item-fullscreen {
+    display: flex;
+    margin-bottom: 60px;
+    &:last-child:after  {
+        background: transparent;
+    }
+    &:after {
+      content: '';
+      position: relative;
+      top: 50px;
+      right: 50%;
+      display: block;
+      width: 5px;
+      height: 5px;
+      background: #fff;
+      border-radius: 50%;
+    }
+  }
+  .menu__link {
+    font-size: rem(22px);
+    font-weight: 400;
+  }
+}
+
+.deactive {
+  display: none;
+}
