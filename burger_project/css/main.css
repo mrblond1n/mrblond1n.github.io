@@ -537,12 +537,18 @@ img {
   text-align: center; }
   .about__item__desc h3 {
     font-family: "Lifehack";
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-bottom: 0.625rem;
     padding: 2.5rem 0 0.625rem 0; }
+    @media screen and (max-width: 420px) {
+      .about__item__desc h3 {
+        font-size: 1.25rem; } }
   .about__item__desc p {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     color: #2f3234; }
+    @media screen and (max-width: 420px) {
+      .about__item__desc p {
+        font-size: 12px; } }
 
 .about__item__pic {
   display: flex;

@@ -29,13 +29,19 @@
   text-align: center;
   h3 {
     font-family: $lifehack;
-    font-size: rem(20px);
+    font-size: rem(24px);
     margin-bottom: rem(10px);
     padding: rem(40px) 0 rem(10px) 0;
+    @include phones {
+      font-size: rem(20px);
+    }
   }
   p {
-    font-size: rem(12px);
+    font-size: rem(14px);
     color: #2f3234;
+    @include phones {
+      font-size: 12px;
+    }
   }
 }
 
