@@ -1,6 +1,11 @@
-let menuBtn = document.body.querySelector('.menu-hamburger');
+let menuBtn = document.body.querySelector('.menu-hamburger'), 
+menuBtnClose = document.body.querySelector('.close-btn'), 
+menuList = document.body.querySelector('.menu-fscr');
 
-menuBtn.addEventListener('click', function(e) {
-  let menuList = document.body.querySelector('.menu__list-fullscreen');
-  menuList.classList.toggle('deactive');
+menuBtn.addEventListener('click', function() {
+  menuList.classList.remove('deactive');
+});
+
+menuBtnClose.addEventListener('click', function() {
+  menuList.classList.add('deactive');
 })
