@@ -438,6 +438,9 @@ img {
   .menu__list-fullscreen .menu__item-fullscreen {
     display: flex;
     margin-bottom: 60px; }
+    @media screen and (max-width: 420px) {
+      .menu__list-fullscreen .menu__item-fullscreen {
+        margin-bottom: 25px; } }
     .menu__list-fullscreen .menu__item-fullscreen:last-child:after {
       background: transparent; }
     .menu__list-fullscreen .menu__item-fullscreen:after {
@@ -450,6 +453,9 @@ img {
       height: 5px;
       background: #fff;
       border-radius: 50%; }
+      @media screen and (max-width: 420px) {
+        .menu__list-fullscreen .menu__item-fullscreen:after {
+          top: 30px; } }
   .menu__list-fullscreen .menu__link {
     font-size: 1.375rem;
     font-weight: 400; }
