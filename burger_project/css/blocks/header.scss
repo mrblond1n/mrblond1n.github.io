@@ -64,6 +64,9 @@
   bottom: rem(10px);
   left: 50%;
   transform: translateX(-50%);
+  @media screen and (max-height: 625px) {
+    display: none;
+  }
 }
 
 .menu-hamburger {
