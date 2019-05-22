@@ -410,7 +410,7 @@ img {
   width: 3.125rem;
   height: 3.125rem;
   position: absolute;
-  bottom: -6.25rem;
+  bottom: 0.625rem;
   left: 50%;
   transform: translateX(-50%); }
 
@@ -422,15 +422,12 @@ img {
 
 .hero {
   background: url("../img/bg/hero-bg.png") center center/cover no-repeat;
-  position: relative;
-  padding-bottom: 100px; }
+  position: relative; }
 
 .hero__container {
   justify-content: flex-start; }
 
 .hero__content {
-  position: relative;
-  bottom: 50px;
   flex: 1;
   display: flex;
   align-items: center;
