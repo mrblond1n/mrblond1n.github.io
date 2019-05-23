@@ -32,7 +32,10 @@
       </li>
     </ul>
     <button type="button" class="close-btn">
-      <img src="./img/icons/close-cross.svg" alt="">
+      <!-- <img src="./img/icons/close-cross.svg" alt=""> -->
+      <svg fill="#fff" width="35" height="35">
+        <use xlink:href="./img/sprite.svg#fsz-menu__btn-close"></use>
+      </svg>
     </button>
   </div>
   
@@ -72,7 +75,7 @@
                 </li>
               </ul>
             </nav>
-            <button type="button" class="btn header__order-btn">Заказать</button>
+            <button type="button" class="btn btn--margin-left">Заказать</button>
             <button type="button" id="menu-hamburger" class="menu-hamburger btn--none-decor">
               <svg fill="#fff" width="24" height="22">
                 <use xlink:href="./img/sprite.svg#menu-hamburger"/>
@@ -147,6 +150,56 @@
           </li>
         </ul>
       </div>
+    </section>
+
+    <section class="section burger-slider">
+      <div class="burger-slider__contain">
+        <div class="burger-slider__left-side">
+          <button type="button" class="btn btn--red">
+            <svg fill="#fff" class="slider_burger-icon">
+              <use xlink:href="./img/sprite.svg#slider_burger-icon"></use>
+            </svg>
+            <h5>Состав</h5>
+          </button>
+          <img class="burger-slider__img" src="./img/burger-slider/black-burger.png" alt="black-burger">
+          <div class="kkal-info">
+            <!-- <div class="kkal-info__icon"> -->
+              <svg class="slider_kkal-icon">
+                <use xlink:href="./img/sprite.svg#slider_kkal-icon"></use>
+              </svg>
+              <h5>1200</h5>
+              <h6>ккал</h6>
+            <!-- </div> -->
+          </div>
+        </div>
+        <div class="burger-slider__right-side">
+          <div class="burger-slider__content">
+            <h2 class="section-title section-title--color-white">Dark BEEF Burger</h2>
+              Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя
+              помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+            <div class="burger-slider__price">
+              <h3><span>500</span> Рублей</h3>
+              <button class="btn btn--margin-left">Заказать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="burger-slider__arrow-left nav-arrow">
+          <button class="btn btn--bg-transparent">
+            <svg fill="#fff" height="50" width="20">
+              <use xlink:href="./img/sprite.svg#arrow-toleft"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="burger-slider__arrow-right nav-arrow">
+          <button class="btn btn--bg-transparent">
+            <svg fill="#fff" height="50" width="20">
+              <use xlink:href="./img/sprite.svg#arrow-toright"></use>
+            </svg>
+          </button>
+        </div>
+
     </section>
 
 

@@ -37,11 +37,7 @@
     }
   }
   p {
-    font-size: rem(14px);
     color: #2f3234;
-    @include phones {
-      font-size: 12px;
-    }
   }
 }
 

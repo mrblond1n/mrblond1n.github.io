@@ -2,7 +2,7 @@ html {
   font-size: 16px;
   height: 100%;
   @include laptops {
-    font-size: 14px;
+    font-size: 13px;
   }
   @include phones {
     font-size: 12px;
@@ -11,8 +11,8 @@ html {
 
 body {
   height: 100%;
-  font-size: rem(16px);
-  line-height: 1.42;
+  font-size: rem(14.5px);
+  line-height: rem(24px);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -51,6 +51,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   font-weight: normal;
   font-family: $gagalin;
+}
+
+h5 {
+  margin: 0;
 }
 
 table {

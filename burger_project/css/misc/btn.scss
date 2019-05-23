@@ -14,21 +14,32 @@
   @include phones {
     font-size: 8px;
   }
-}
-
-.btn--bg-black {
-  background: #2f3234;
-  &:hover {
-    background: #1f2122;
+  &--bg-black {
+    background: #2f3234;
+    &:hover {
+      background: #1f2122;
+    }
+  }
+  &--bg-transparent {
+    background: transparent;
+    text-transform: none;
+  }
+  &--none-decor {
+    border: none;
+    background: transparent;
+  }
+  &--margin-left {
+    margin-left: rem(15px);
+  }
+  &--red {
+    // background: $red;
+    background: rgb(231, 119, 39);
   }
 }
 
-.btn--bg-transparent {
-  background: transparent;
-  text-transform: none;
-}
 
-.btn--none-decor {
-  border: none;
-  background: transparent;
-}
+
+
+
+
+
