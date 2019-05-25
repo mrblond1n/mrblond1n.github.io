@@ -428,12 +428,10 @@ img {
   display: flex;
   position: fixed;
   top: 0;
-  overflow: hidden;
   flex-direction: column;
   height: 100vh;
   width: 100%;
   background: rgba(47, 50, 52, 0.99);
-  z-index: 1;
   justify-content: center;
   align-items: center;
   padding-top: 4.375rem;
