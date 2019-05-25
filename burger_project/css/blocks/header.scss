@@ -73,6 +73,8 @@
 
 .menu-fullscreen__list {
   display: flex;
+  position: fixed;
+  top: 0;
   overflow: hidden;
   flex-direction: column;
   height: 100vh;
