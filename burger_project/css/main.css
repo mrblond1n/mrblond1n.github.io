@@ -378,9 +378,6 @@ img {
     .menu__list {
       display: none; } }
 
-.logo {
-  z-index: 2; }
-
 .menu__link {
   font-size: 0.8125rem;
   font-weight: 500;
@@ -424,10 +421,11 @@ img {
     .menu-hamburger {
       display: block; } }
 
-.menu__list-fullscreen {
+.menu-fullscreen__list {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
+  top: 0;
   height: 100vh;
   width: 100%;
   background: rgba(47, 50, 52, 0.99);
@@ -435,15 +433,15 @@ img {
   justify-content: center;
   align-items: center;
   padding-top: 4.375rem; }
-  .menu__list-fullscreen .menu__item-fullscreen {
+  .menu-fullscreen__list .menu-fullscreen__item {
     display: flex;
     margin-bottom: 60px; }
     @media screen and (max-width: 420px) {
-      .menu__list-fullscreen .menu__item-fullscreen {
+      .menu-fullscreen__list .menu-fullscreen__item {
         margin-bottom: 25px; } }
-    .menu__list-fullscreen .menu__item-fullscreen:last-child:after {
+    .menu-fullscreen__list .menu-fullscreen__item:last-child:after {
       background: transparent; }
-    .menu__list-fullscreen .menu__item-fullscreen:after {
+    .menu-fullscreen__list .menu-fullscreen__item:after {
       content: '';
       position: relative;
       top: 50px;
@@ -454,9 +452,9 @@ img {
       background: #fff;
       border-radius: 50%; }
       @media screen and (max-width: 420px) {
-        .menu__list-fullscreen .menu__item-fullscreen:after {
+        .menu-fullscreen__list .menu-fullscreen__item:after {
           top: 30px; } }
-  .menu__list-fullscreen .menu__link {
+  .menu-fullscreen__list .menu__link {
     font-size: 1.375rem;
     font-weight: 400; }
 
@@ -466,12 +464,19 @@ img {
 .close-btn {
   display: block;
   z-index: 3;
-  position: absolute;
+  position: fixed;
   right: 10px;
   top: 40px;
   background: transparent;
   border: none;
   cursor: pointer; }
+
+.menu-fullscreen__logo {
+  display: block;
+  z-index: 3;
+  position: fixed;
+  left: 13px;
+  top: 8px; }
 
 .hero {
   background: url("../img/bg/hero-bg.png") center center/cover no-repeat;
@@ -913,12 +918,12 @@ address {
   align-items: center;
   justify-content: center; }
 
-.burger-slider__contain {
+.burger-slider__item {
   display: flex;
   align-items: center;
   padding: 0 70px; }
   @media screen and (max-width: 768px) {
-    .burger-slider__contain {
+    .burger-slider__item {
       flex-direction: column;
       padding: 0 40px; } }
 
@@ -943,6 +948,8 @@ address {
     align-items: center;
     max-width: 5.625rem;
     max-height: 5.625rem; }
+    .burger-slider__left-side button:hover {
+      background: #e77727; }
     @media screen and (max-width: 768px) {
       .burger-slider__left-side button {
         position: relative;
@@ -1071,8 +1078,6 @@ address {
     background: transparent; }
   .btn--margin-left {
     margin-left: 0.9375rem; }
-  .btn--red {
-    background: #e77727; }
 
 .section-title {
   font-size: 72px;
