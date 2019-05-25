@@ -994,7 +994,8 @@ address {
   justify-content: center;
   position: relative;
   left: 20px;
-  bottom: 50px; }
+  bottom: 50px;
+  z-index: 9; }
   @media screen and (max-width: 768px) {
     .kkal-info {
       bottom: 60px;

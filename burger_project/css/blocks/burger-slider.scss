@@ -97,6 +97,7 @@
   position: relative;
   left: 20px;
   bottom: 50px;
+  z-index: 9;
   @include laptops {
     bottom: 60px;
     margin-left: -40px;
