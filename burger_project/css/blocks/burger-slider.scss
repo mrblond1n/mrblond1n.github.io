@@ -37,6 +37,7 @@
   text-align: left;
   border-radius: 5px;
   max-width: 270px;
+  z-index: 10;
   @include laptops {
     left: 73px;
   }

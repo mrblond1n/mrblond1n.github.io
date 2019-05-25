@@ -943,7 +943,8 @@ address {
   padding: 20px;
   text-align: left;
   border-radius: 5px;
-  max-width: 270px; }
+  max-width: 270px;
+  z-index: 10; }
   @media screen and (max-width: 768px) {
     .burger-slider__compos {
       left: 73px; } }
