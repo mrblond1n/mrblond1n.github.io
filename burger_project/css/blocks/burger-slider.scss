@@ -25,6 +25,30 @@
 
 // LEFT SIDE
 
+.burger-slider__compos {
+  display: none;
+  position: absolute;
+  background: rgba(#fff, .9);
+  left: 80px;
+  top: 0px;
+  color: $black;
+  text-transform: none;
+  padding: 20px;
+  text-align: left;
+  border-radius: 5px;
+  max-width: 270px;
+  @include laptops {
+    left: 73px;
+  }
+  td:nth-child(2n) {
+    padding: 0 65px 0 20px;
+  }
+  td:nth-child(3n) {
+    font-weight: 300;
+  }
+  
+}
+
 .burger-slider__left-side {
   flex-direction: column;
   max-width: 100%;
@@ -42,8 +66,12 @@
     align-items: center;
     max-width: rem(90px);
     max-height: rem(90px);
+    background: rgb(231, 119, 39);
     &:hover {
-      background: rgb(231, 119, 39);
+      background: $red;
+      .burger-slider__compos {
+        display: block;
+      }
     }
     @include laptops {
       position: relative;
