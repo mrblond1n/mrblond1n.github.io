@@ -8,7 +8,7 @@
   justify-content: center;
 }
 
-.burger-slider__item {
+.burger-slider__item.active{
   display: flex;
   align-items: center;
   padding: 0 70px;
@@ -16,6 +16,10 @@
     flex-direction: column;
     padding: 0 40px;
   }
+}
+
+.burger-slider__item {
+  display: none;
 }
 
 .burger-slider__left-side, .burger-slider__right-side {
