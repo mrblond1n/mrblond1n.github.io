@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-.menu__list {
+.nav-menu__list {
   display: flex;
   align-items: center;
   @include laptops {
@@ -20,14 +20,14 @@
 }
 
 
-.menu__link {
+.nav-menu__link {
   font-size: rem(13px);
   font-weight: 500;
   color: #fff;
   text-transform: uppercase;
 }
 
-.menu__item {
+.nav-menu__item {
   white-space: nowrap;
   margin-right: rem(10px);
   display: flex;
@@ -71,7 +71,7 @@
 }
 
 
-.menu-fullscreen__list {
+.nav-menu-fullscreen__list {
   display: flex;
   position: fixed;
   top: 0;
@@ -83,7 +83,7 @@
   align-items: center;
   padding-top: rem(70px);
   z-index: 11;
-  .menu-fullscreen__item {
+  .nav-menu-fullscreen__item {
     @include phones {
       margin-bottom: 25px;
     }
@@ -107,7 +107,7 @@
       }
     }
   }
-  .menu__link {
+  .nav-menu__link {
     font-size: rem(22px);
     font-weight: 400;
   }
@@ -128,7 +128,7 @@
   cursor: pointer;
 }
 
-.menu-fullscreen__logo {
+.nav-menu-fullscreen__logo {
   display: block;
   z-index: 12;
   position: fixed;

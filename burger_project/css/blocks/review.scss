@@ -35,8 +35,10 @@
     justify-content: center;
   }
   p {
-    line-height: 1.8;
     padding-bottom: rem(15px);
+    @include phones {
+      display: none;
+    }
   }
   h3 {
     text-transform: uppercase;
