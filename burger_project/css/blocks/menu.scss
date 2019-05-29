@@ -11,6 +11,11 @@
   }
 }
 
+.menu__container {
+  position: absolute;
+  right: 0;
+}
+
 .acco-menu__item--meat {
   background: url("../img/bg/menu-bg1.png") center (center / cover) no-repeat;
 }
@@ -35,12 +40,12 @@
 
 .acco-menu__list {
   display: flex;
-  position: relative;
-  min-height: 650px;
+  justify-content: flex-end;
 }
 
 .acco-menu__item {
   display: flex;
+  justify-content: flex-end;
   max-height: 100vh;
   div {
     width: 0px;

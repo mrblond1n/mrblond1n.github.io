@@ -630,7 +630,6 @@ img {
 
 .team__container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   padding: 4.375rem 6.25rem;
   opacity: 0.93;
@@ -719,6 +718,10 @@ img {
       .menu .section-title {
         margin: 6.25rem 1.25rem; } }
 
+.menu__container {
+  position: absolute;
+  right: 0; }
+
 .acco-menu__item--meat {
   background: url("../img/bg/menu-bg1.png") center center/cover no-repeat; }
 
@@ -739,11 +742,11 @@ img {
 
 .acco-menu__list {
   display: flex;
-  position: relative;
-  min-height: 650px; }
+  justify-content: flex-end; }
 
 .acco-menu__item {
   display: flex;
+  justify-content: flex-end;
   max-height: 100vh; }
   .acco-menu__item div {
     width: 0px;
@@ -922,17 +925,28 @@ address {
   align-items: center;
   justify-content: center; }
 
-.burger-slider__item.active {
+.burger-slider__container {
+  width: 1100px;
+  width: 100%;
+  overflow: hidden;
+  display: flex; }
+
+.burger-slider__list {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  align-items: center; }
+
+.burger-slider__item {
+  min-width: 100%;
   display: flex;
   align-items: center;
   padding: 0 70px; }
   @media screen and (max-width: 768px) {
-    .burger-slider__item.active {
+    .burger-slider__item {
       flex-direction: column;
       padding: 0 40px; } }
-
-.burger-slider__item {
-  display: none; }
 
 .burger-slider__left-side, .burger-slider__right-side {
   display: flex;
@@ -1021,14 +1035,17 @@ address {
     font-size: 0.875rem;
     margin: 10px 0 0; }
 
-@media screen and (max-width: 768px) {
-  .burger-slider__img {
-    max-width: 350px;
-    max-height: 250px; } }
-@media screen and (max-width: 420px) {
-  .burger-slider__img {
-    max-width: 200px;
-    max-height: 150px; } }
+.burger-slider__img {
+  max-width: 505px;
+  max-height: 330px; }
+  @media screen and (max-width: 768px) {
+    .burger-slider__img {
+      max-width: 350px;
+      max-height: 250px; } }
+  @media screen and (max-width: 420px) {
+    .burger-slider__img {
+      max-width: 200px;
+      max-height: 150px; } }
 
 .burger-slider__right-side {
   margin-left: 1%;

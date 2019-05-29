@@ -6,9 +6,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  // overflow: hidden;
 }
 
-.burger-slider__item.active{
+.burger-slider__container {
+  width: 1100px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+
+}
+
+.burger-slider__list {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+}
+
+.burger-slider__item{
+  min-width: 100%;
   display: flex;
   align-items: center;
   padding: 0 70px;
@@ -18,9 +36,6 @@
   }
 }
 
-.burger-slider__item {
-  display: none;
-}
 
 .burger-slider__left-side, .burger-slider__right-side {
   display: flex;
@@ -126,6 +141,8 @@
 }
 
 .burger-slider__img {
+  max-width: 505px;
+  max-height: 330px;
   @include laptops {
     max-width: 350px;
     max-height: 250px;
