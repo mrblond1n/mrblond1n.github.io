@@ -1036,6 +1036,9 @@ address {
     margin: 10px 0 0; }
 
 .burger-slider__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 505px;
   max-height: 330px; }
   @media screen and (max-width: 768px) {
