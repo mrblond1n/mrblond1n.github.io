@@ -970,8 +970,7 @@ address {
   justify-content: center; }
 
 .burger-slider__container {
-  width: 1100px;
-  width: 100%;
+  max-width: 1100px;
   overflow: hidden;
   display: flex; }
 
