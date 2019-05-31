@@ -104,7 +104,7 @@ toLeft.addEventListener('click', function() {
 
 
 
-// POP UP TO REVIEWS
+// POP-UP TO REVIEWS
 
 const buttonMore = document.querySelectorAll('.more-review'),
 buttonRead = document.querySelectorAll('.read-review'),
@@ -153,10 +153,3 @@ for (let i = 0; i < buttonRead.length; i++) {
   });
 
 };
-
-
-
-
-
-
-

@@ -118,12 +118,52 @@
   }
 }
 
-#user_name {
-  tabindex: 1;
+
+
+// POPUP MESSAGE ORDER
+
+.success-order {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(#2f3234, .92);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
-#user_phone {
-  tabindex: 2;
+
+.success-order__message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+  button {
+    margin-top: 10px;
+  }
 }
-#user_comment {
-  tabindex: 3;
+
+.failed-order {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(#2f3234, .92);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.failed-order__message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+  button {
+    margin-top: 10px;
+  }
 }
