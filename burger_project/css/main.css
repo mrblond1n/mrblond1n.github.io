@@ -576,7 +576,7 @@ img {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.61);
-  padding: 20% 10% 10px;
+  padding: 3rem 1rem;
   color: #fff;
   opacity: 0;
   transition: opacity .3s;
@@ -585,9 +585,9 @@ img {
   align-items: flex-start; }
   @media screen and (max-width: 768px) {
     .review__hover {
+      padding: 1rem;
       text-align: center;
-      align-items: center;
-      padding: 5% 5% 0; } }
+      align-items: center; } }
   @media screen and (max-width: 420px) {
     .review__hover {
       justify-content: center; } }
@@ -618,10 +618,43 @@ img {
   @media screen and (max-width: 420px) {
     .read-review {
       display: block; } }
+  .read-review:hover p {
+    display: block;
+    position: absolute;
+    z-index: 11; }
 
 @media screen and (max-width: 420px) {
   .more-review {
     display: none; } }
+
+.close-btn__review {
+  display: none; }
+
+.review__popup--active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(47, 50, 52, 0.92);
+  color: #2f3234;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 10; }
+  .review__popup--active .close-btn__review {
+    display: inline-block;
+    position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    left: 390px;
+    top: 20px; }
+
+.review__content--active {
+  padding: 0 20px 20px;
+  border-radius: 5px;
+  max-width: 460px;
+  background: #fff; }
 
 .team {
   background: url("../img/bg/team-bg.png") center center/cover no-repeat;
@@ -771,7 +804,7 @@ img {
   max-width: 33.75rem;
   line-height: 1.75;
   letter-spacing: 0.1px;
-  padding: 3.75rem 5.4%; }
+  padding: 3rem 1.5rem; }
 .acco-menu__item--active h3 {
   color: #f9b43b; }
 
@@ -911,6 +944,15 @@ address {
   @media screen and (max-width: 420px) {
     .button-group {
       text-align: center; } }
+
+#user_name {
+  tabindex: 1; }
+
+#user_phone {
+  tabindex: 2; }
+
+#user_comment {
+  tabindex: 3; }
 
 .container-accordeon {
   position: absolute;

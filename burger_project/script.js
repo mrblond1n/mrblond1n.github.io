@@ -1,7 +1,7 @@
 // NAV MENU
 
 const navMenuBtn = document.body.querySelector('.menu-hamburger'), 
-navMenuBtnClose = document.body.querySelector('.close-btn'), 
+navMenuBtnClose = document.body.querySelector('#close-btn__nav-menu'), 
 navMenuList = document.body.querySelector('.nav-menu-fullscreen');
 
 navMenuBtn.addEventListener('click', function() {
@@ -78,7 +78,6 @@ toRight = document.querySelector('.burger-slider__arrow-right'),
 sliderList = document.querySelector('.burger-slider__list'),
 sliderItem = document.querySelectorAll('.burger-slider__item'),
 sliderLength = sliderItem.length - 1;
-console.log(sliderLength * -100);
 
 let count = 0;
 
@@ -102,4 +101,40 @@ toLeft.addEventListener('click', function() {
 
   sliderList.style.transform = 'translateX(' + count + '%)';
 });
+
+
+
+// POP UP TO REVIEWS
+
+const buttonMore = document.querySelectorAll('.more-review'),
+reviewSection = document.querySelector('.reviews'),
+reviewPopup = document.querySelectorAll('.review__popup');
+
+for (let i = 0; i < buttonMore.length; i++) {
+  buttonMore[i].addEventListener('click', function (e) {
+    e.preventDefault();
+
+    let newDiv = document.createElement('div');
+    newDiv.innerHTML = reviewPopup[i].innerHTML;
+    newDiv.classList.add('review__popup--active');
+    newDiv.children[0].classList.add('review__content--active');
+    reviewSection.appendChild(newDiv);
+
+    document.body.classList.add('lock');
+
+    newDiv.children[0].children[0].addEventListener('click', function() {
+      newDiv.classList.remove('review__popup--active');
+      newDiv.children[0].classList.remove('review__content--active');
+      newDiv.remove();
+      document.body.classList.remove('lock');
+    })
+  });
+
+};
+
+
+
+
+
+
 
