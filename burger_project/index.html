@@ -956,11 +956,11 @@
           <div class="form-order__first-column">
             <div class="first-column__first-row first-column__row">
               <label for="user_name">Имя
-                <input name="user_name" type="text" id="user-name" class="first-column__first-row__mid" required>
+                <input name="user_name" pattern="[A-Za-zА-Яа-я]+" type="text" id="user-name" class="first-column__first-row__mid" required>
               </label>
             
               <label for="user-phone">Телефон
-                <input name="user_phone" type="tel" id="user-phone" class="first-column__first-row__mid" required>
+                <input name="user_phone" pattern="^[ 0-9]+$" type="tel" id="user-phone" class="first-column__first-row__mid" required>
               </label>
             </div>
             

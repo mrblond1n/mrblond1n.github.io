@@ -32,12 +32,27 @@ function reqReadyStateChange() { // ??
 };
 
 function ajaxForm(form) {
-  let formData = new FormData(),
-    url = "https://webdev-api.loftschool.com/sendmail/fail";
+  let formData = new FormData();
+    // url = "https://webdev-api.loftschool.com/sendmail";
 
-  formData.append('name', form.elements.user_name.value);
-  formData.append('phone', form.elements.user_phone.value);
-  formData.append('comment', form.elements.user_comment.value || '');
+  let userName = form.elements.user_name,
+    userPhone = form.elements.user_phone,
+    userComment = form.elements.user_comment;
+  
+  if (userName.validity.patternMismatch
+    || userName.value == '' 
+    || userPhone.validity.patternMismatch 
+    || userPhone.value == ''
+    || userComment.value == '') {
+    url = "https://webdev-api.loftschool.com/sendmail/fail";
+  } else {
+    url = "https://webdev-api.loftschool.com/sendmail";
+  }
+
+
+  formData.append('name', userName.value);
+  formData.append('phone', userPhone.value);
+  formData.append('comment', userComment.value);
   formData.append('to', 'mail@mail.ru');
 
   xhr.open("POST", url);
@@ -45,7 +60,6 @@ function ajaxForm(form) {
   xhr.onreadystatechange = reqReadyStateChange; // ???
   xhr.send(formData);
 };
-
 
 orderButton.addEventListener('click', function (e) {
   e.preventDefault();
