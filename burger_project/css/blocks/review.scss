@@ -94,20 +94,22 @@
   position: fixed;
   top: 0;
   z-index: 10;
+  padding: 10px;
   .close-btn__review {
     display: inline-block;
-    position: relative;
+    position: absolute;
     background: transparent;
     border: none;
     cursor: pointer;
-    left: 390px;
-    top: 20px;
+    right: 20px;
   }
 }
 
 .review__content--active {
-  padding: 0 20px 20px;
+  position: absolute;
+  padding: 20px;
   border-radius: 5px;
   max-width: 460px;
+  margin-right: 10px;
   background: #fff;
 }
