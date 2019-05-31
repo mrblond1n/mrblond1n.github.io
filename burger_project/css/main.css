@@ -683,14 +683,16 @@ img {
 
 .team__members {
   margin-top: 0.75rem;
-  text-align: left; }
+  text-align: left;
+  transition: .4s; }
   @media screen and (max-width: 768px) {
     .team__members {
       text-align: center; } }
 
 .member__card {
   margin-top: 5px;
-  color: #fff; }
+  color: #fff;
+  transition: .4s; }
 
 .member__name {
   display: inline-block;
@@ -734,6 +736,9 @@ img {
   margin-bottom: 20px; }
   .member__disc b {
     margin-bottom: 15px; }
+
+.member__card .polygon {
+  transition: .4s; }
 
 .member__card--active .polygon {
   transform: rotate(180deg); }
@@ -782,7 +787,7 @@ img {
 .acco-menu__item {
   display: flex;
   justify-content: flex-end;
-  max-height: 100vh; }
+  height: 100vh; }
   .acco-menu__item div {
     width: 0px;
     overflow: hidden;
@@ -803,7 +808,7 @@ img {
 
 .acco-menu__item--active div {
   width: 100%;
-  max-width: 33.75rem;
+  max-width: 540px;
   line-height: 1.75;
   letter-spacing: 0.1px;
   padding: 3rem 1.5rem; }
@@ -987,10 +992,6 @@ address {
   .failed-order__message button {
     margin-top: 10px; }
 
-.container-accordeon {
-  position: absolute;
-  right: 0; }
-
 .burger-slider {
   background-image: -moz-linear-gradient(90deg, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%);
   background-image: -webkit-linear-gradient(90deg, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%);
@@ -1010,7 +1011,8 @@ address {
   position: relative;
   height: 100vh;
   width: 100%;
-  align-items: center; }
+  align-items: center;
+  transition: .4s; }
 
 .burger-slider__item {
   min-width: 100%;
@@ -1229,22 +1231,22 @@ address {
     .fixed-menu {
       display: none; } }
 
-.fixed-menu__item {
+.fixed-nav-menu__item {
   margin-bottom: 7px; }
 
-.fixed-menu__link {
+.fixed-nav-menu__link {
   width: 14px;
   height: 14px;
   display: block;
   position: relative; }
-  .fixed-menu__link:after {
+  .fixed-nav-menu__link:after {
     content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%; }
-  .fixed-menu__link:before {
+  .fixed-nav-menu__link:before {
     content: "";
     position: absolute;
     top: 50%;
@@ -1256,11 +1258,11 @@ address {
     border: 1px solid #fff;
     opacity: 0;
     transition: .4s; }
-  .fixed-menu__link:after {
+  .fixed-nav-menu__link:after {
     width: 6px;
     height: 6px;
     background: #fff; }
-  .fixed-menu__link:hover:before {
+  .fixed-nav-menu__link:hover:before {
     width: 14px;
     height: 14px;
     opacity: 1; }

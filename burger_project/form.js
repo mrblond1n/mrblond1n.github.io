@@ -18,6 +18,7 @@ function reqReadyStateChange() { // ??
       closeSuccessMessage.addEventListener('click', () => {
         successOrder.style.display = "none";
         document.body.classList.remove('lock');
+        document.querySelector('#resetButton').click();
       });
     } else if (message.status == 0) {
       console.log('Ошибка в принятии заказа, попробуйте позже');
@@ -33,7 +34,6 @@ function reqReadyStateChange() { // ??
 
 function ajaxForm(form) {
   let formData = new FormData();
-    // url = "https://webdev-api.loftschool.com/sendmail";
 
   let userName = form.elements.user_name,
     userPhone = form.elements.user_phone,

@@ -11,6 +11,10 @@
   }
 }
 
+// .menu * {
+//    transition: 2.2s;
+// }
+
 .menu__container {
   position: absolute;
   right: 0;
@@ -46,7 +50,7 @@
 .acco-menu__item {
   display: flex;
   justify-content: flex-end;
-  max-height: 100vh;
+  height: 100vh;
   div {
     width: 0px;
     overflow: hidden;
@@ -71,10 +75,16 @@
 .acco-menu__item--active {
   div {
     width: 100%;
-    max-width: rem(540px);
+    max-width: 540px;
     line-height: 1.75;
     letter-spacing: 0.1px;
     padding: 3rem 1.5rem;
+    // @include laptops {
+    //   max-width: 340px;
+    // }
+    // @include phones {
+    //   max-width: 200px;
+    // }
   }
   h3 {
     color: $yellow;
