@@ -7,7 +7,9 @@ const form = document.querySelector('#form-order'),
   closeFailedMessage = document.querySelector('#close__failed-message'),
   requiredItems = document.querySelectorAll('.required'),
   numberOnly = document.querySelectorAll('.number-only'),
-  textOnly = document.querySelector('.text-only');
+  textOnly = document.querySelector('.text-only'),
+  userPhone = document.querySelector('#user-phone'),
+  helpForm = document.querySelector('.helpForNumber');
 
 function reqReadyStateChange() { // ??
   if (xhr.readyState == 4 && xhr.status == 200) {
@@ -51,8 +53,7 @@ function ajaxForm(form) {
     userPhone = form.elements.user_phone,
     userComment = form.elements.user_comment;
   
-  if (userName.validity.patternMismatch
-    || userName.value == '' 
+  if (userName.value == '' 
     || userPhone.validity.patternMismatch 
     || userPhone.value == ''
     || userComment.value == '') {
@@ -81,11 +82,9 @@ orderButton.addEventListener('click', function (e) {
 
 for (let i = 0; i < numberOnly.length; i++) {
   numberOnly[i].addEventListener('keydown', function (e) {
-
     if (e.keyCode >= 65 && e.keyCode <= 90) {
       e.preventDefault();
     };
-
   });
 };
 
@@ -94,3 +93,16 @@ textOnly.addEventListener('keydown', function (e) {
     e.preventDefault();
   };
 });
+
+
+
+userPhone.addEventListener('focus', () => {
+  if (userPhone.validity.patternMismatch) {
+    helpForm.innerText = 'Пример ввода: +79990009900'
+  } else {
+    helpForm.innerText = '';
+  }
+});
+userPhone.addEventListener('blur', () => {
+  helpForm.innerText = '';
+})

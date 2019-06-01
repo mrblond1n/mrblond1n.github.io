@@ -961,8 +961,9 @@
                 <input name="user_name" type="text" id="user-name" class="first-column__first-row__mid text-only required" maxlength="20">
               </label>
             
-              <label for="user-phone">Телефон
-                <input name="user_phone" maxlength="11" id="user-phone" class="first-column__first-row__mid number-only required">
+              <label for="user-phone" id="userPhone">Телефон
+                <input name="user_phone" value="+7" maxlength="12" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" id="user-phone" class="first-column__first-row__mid number-only required">
+                <div class="helpForNumber"></div>
               </label>
             </div>
             

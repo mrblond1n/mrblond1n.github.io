@@ -1,5 +1,6 @@
 .form {
   background: url('../img/bg/form-bg.png') center center / cover no-repeat;
+  position: relative;
 }
 
 .form-order {
@@ -56,6 +57,10 @@
   border-radius: 5px;
   padding: 10px;
   }
+}
+
+.helpForNumber {
+  position: absolute;
 }
 
 .first-column__row {

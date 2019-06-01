@@ -854,7 +854,8 @@ address {
     fill: #fff; }
 
 .form {
-  background: url("../img/bg/form-bg.png") center center/cover no-repeat; }
+  background: url("../img/bg/form-bg.png") center center/cover no-repeat;
+  position: relative; }
 
 .form-order {
   display: flex;
@@ -902,6 +903,9 @@ address {
     height: 80px;
     border-radius: 5px;
     padding: 10px; }
+
+.helpForNumber {
+  position: absolute; }
 
 .first-column__row {
   display: flex; }
