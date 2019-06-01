@@ -98,11 +98,11 @@ textOnly.addEventListener('keydown', function (e) {
 
 userPhone.addEventListener('focus', () => {
   if (userPhone.validity.patternMismatch) {
-    helpForm.innerText = 'Пример ввода: +79990009900'
+    helpForm.innerText = 'Пример ввода: +79990009900';
   } else {
     helpForm.innerText = '';
-  }
+  };
+  userPhone.addEventListener('blur', () => {
+    helpForm.innerText = '';
+  });
 });
-userPhone.addEventListener('blur', () => {
-  helpForm.innerText = '';
-})
