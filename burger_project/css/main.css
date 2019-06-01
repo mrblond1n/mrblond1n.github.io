@@ -885,7 +885,7 @@ address {
     height: 25px;
     border-radius: 5px;
     width: 100%;
-    border: none;
+    border: hidden;
     padding-left: 10px;
     font-size: 16px; }
   .form-order__first-column label, .form-order__second-column label {
@@ -896,6 +896,7 @@ address {
     .form-order__first-column label:not(:first-of-type), .form-order__second-column label:not(:first-of-type) {
       margin-left: 10px; }
   .form-order__first-column textarea, .form-order__second-column textarea {
+    margin-top: 3px;
     resize: none;
     width: 100%;
     height: 80px;
@@ -991,6 +992,9 @@ address {
   border-radius: 5px; }
   .failed-order__message button {
     margin-top: 10px; }
+
+.required--active {
+  border: 2px solid #e35028 !important; }
 
 .burger-slider {
   background-image: -moz-linear-gradient(90deg, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%);
