@@ -26,6 +26,8 @@ function reqReadyStateChange() { // ??
         document.body.classList.remove('lock');
         for (let i = 0; i < requiredItems.length; i++) {
           requiredItems[i].classList.remove('required--active'); // удаление обводки красным, если поля заполнены правильно
+          
+
         };
         document.querySelector('#resetButton').click();
       });
@@ -117,4 +119,9 @@ userPhone.addEventListener('focus', () => { // всплывающая подск
   });
 });
 
+document.querySelector('#resetButton').addEventListener('click', () => {
+  for (let i = 0; i < requiredItems.length; i++) {
+    requiredItems[i].classList.remove('required--active');
+  }
+})
 
