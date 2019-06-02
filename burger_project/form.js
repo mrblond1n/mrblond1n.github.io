@@ -11,12 +11,13 @@ const form = document.querySelector('#form-order'),
   userPhone = document.querySelector('#user-phone'),
   helpForm = document.querySelector('.helpForNumber');
 
+
 function reqReadyStateChange() { // ??
-  if (xhr.readyState == 4 && xhr.status == 200) {
+  if (xhr.readyState == 4 && xhr.status == 200) { 
 
     let message = JSON.parse(xhr.responseText);
 
-    if (message.status == 1) {
+    if (message.status == 1) { // валидное заполнение
       console.log('Заказ принят!');
       successOrder.style.display = "flex";
       document.body.classList.add('lock');
@@ -24,18 +25,23 @@ function reqReadyStateChange() { // ??
         successOrder.style.display = "none";
         document.body.classList.remove('lock');
         for (let i = 0; i < requiredItems.length; i++) {
-          requiredItems[i].classList.remove('required--active');
+          requiredItems[i].classList.remove('required--active'); // удаление обводки красным, если поля заполнены правильно
         };
         document.querySelector('#resetButton').click();
       });
-    } else if (message.status == 0) {
+    } else if (message.status == 0) { // невалидное заполнение
       console.log('Ошибка в принятии заказа, попробуйте позже');
-      for (let i = 0; i < requiredItems.length; i++) {
-        requiredItems[i].classList.add('required--active');
-        requiredItems[i].addEventListener('click', () => {
+      for (let i = 0; i < requiredItems.length; i++) {    // обводка красным незаполненные поля.
+        if (requiredItems[i].value == '' || requiredItems[i].value == '+7') {
+          requiredItems[i].classList.add('required--active');
+          if (!userPhone.validity.patternMismatch) {
+            userPhone.classList.remove('required--active');
+          }
+        };
+        requiredItems[i].addEventListener('click', () => { // удаление обводки, при клике.
           requiredItems[i].classList.remove('required--active');
-        })
-      }
+        });
+      };
       failedOrder.style.display = "flex";
       document.body.classList.add('lock');
       closeFailedMessage.addEventListener('click', () => {
@@ -46,6 +52,7 @@ function reqReadyStateChange() { // ??
   };
 };
 
+
 function ajaxForm(form) {
   let formData = new FormData();
 
@@ -53,15 +60,18 @@ function ajaxForm(form) {
     userPhone = form.elements.user_phone,
     userComment = form.elements.user_comment;
   
-  if (userName.value == '' 
-    || userPhone.validity.patternMismatch 
-    || userPhone.value == ''
-    || userComment.value == '') {
+  if (userPhone.validity.patternMismatch) { // проверка по паттерну номер телефона
+
     url = "https://webdev-api.loftschool.com/sendmail/fail";
   } else {
     url = "https://webdev-api.loftschool.com/sendmail";
   }
 
+  for (let i = 0; i < requiredItems.length; i++) { // проверка на заполненность форм
+    if (requiredItems[i].value == "") {
+      url = "https://webdev-api.loftschool.com/sendmail/fail";
+    }
+  }
 
   formData.append('name', userName.value);
   formData.append('phone', userPhone.value);
@@ -80,7 +90,7 @@ orderButton.addEventListener('click', function (e) {
   ajaxForm(form);
 });
 
-for (let i = 0; i < numberOnly.length; i++) {
+for (let i = 0; i < numberOnly.length; i++) { // запрет ввода букв
   numberOnly[i].addEventListener('keydown', function (e) {
     if (e.keyCode >= 65 && e.keyCode <= 90) {
       e.preventDefault();
@@ -88,7 +98,7 @@ for (let i = 0; i < numberOnly.length; i++) {
   });
 };
 
-textOnly.addEventListener('keydown', function (e) {
+textOnly.addEventListener('keydown', function (e) { // запрет ввода цифр
   if (isFinite(e.key) || e.key == '+' || e.key == '/') {
     e.preventDefault();
   };
@@ -96,13 +106,15 @@ textOnly.addEventListener('keydown', function (e) {
 
 
 
-userPhone.addEventListener('focus', () => {
-  if (userPhone.validity.patternMismatch) {
+userPhone.addEventListener('focus', () => { // всплывающая подсказка для заполнения формы телефона
+  if (userPhone.validity.patternMismatch || userPhone.value == '+7') {
     helpForm.innerText = 'Пример ввода: +79990009900';
   } else {
     helpForm.innerText = '';
   };
-  userPhone.addEventListener('blur', () => {
+  userPhone.addEventListener('blur', () => { // скрытие подсказки для заполнения формы телефона
     helpForm.innerText = '';
   });
 });
+
+
