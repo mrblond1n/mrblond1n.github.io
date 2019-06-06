@@ -54,7 +54,7 @@
   width: rem(50px);
   height: rem(50px);
   position: absolute;
-  bottom: rem(10px);
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
   @media screen and (max-height: 625px) {

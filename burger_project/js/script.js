@@ -86,6 +86,8 @@ toRight.addEventListener('click', function() {
   
   if (count > sliderLength * -100) {
     count += toRight;
+  } else if (count == sliderLength * -100) {
+    count = 0;
   };
   
   sliderList.style.transform = 'translateX(' + count + '%)';
@@ -97,6 +99,8 @@ toLeft.addEventListener('click', function() {
 
   if(count < 0) {
     count += toLeft;
+  } else if (count == 0){
+    count = sliderLength * -100
   };
 
   sliderList.style.transform = 'translateX(' + count + '%)';
@@ -104,7 +108,7 @@ toLeft.addEventListener('click', function() {
 
 
 
-// POP-UP TO REVIEWS
+// POP-UP TO REVIEW_SECTION
 
 const buttonMore = document.querySelectorAll('.more-review'),
 buttonRead = document.querySelectorAll('.read-review'),
@@ -153,3 +157,7 @@ for (let i = 0; i < buttonRead.length; i++) {
   });
 
 };
+
+
+// ONE PAGE SCROLL
+
