@@ -1,0 +1,91 @@
+.menu {
+  background: url("../img/bg/menu-bg.png") center (center / cover) no-repeat;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  .section-title {
+    margin: rem(105px);
+    @include laptops {
+      margin: rem(100px) rem(20px);
+    }
+  }
+}
+
+.menu__container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.acco-menu__item--meat {
+  background: url("../img/bg/menu-bg1.png") center (center / cover) no-repeat;
+}
+
+.acco-menu__item--vegan {
+  background: url("../img/bg/menu-bg2.png") center (center / cover) no-repeat;
+}
+
+.acco-menu__item--diet {
+  background: url("../img/bg/menu-bg3.png") center (center / cover) no-repeat;
+}
+
+.acco-menu__item h3 {
+  position: relative;
+  bottom: 50px;
+  margin: 0;
+  color: white;
+  font-size: rem(40px);
+  transform: rotate(270deg);
+  white-space: nowrap;
+}
+
+.acco-menu__list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.acco-menu__item {
+  display: flex;
+  justify-content: flex-end;
+  height: 100vh;
+  min-height: 650px;
+  div {
+    width: 0px;
+    overflow: hidden;
+    background: rgba(47, 50, 52, 0.93);
+    padding: 0;
+  }
+}
+
+.acco-menu__item--section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: rem(80px);
+  @include laptops {
+    max-width: rem(60px);
+  }
+  @include phones {
+    max-width: rem(40px);
+  }
+}
+
+.acco-menu__item--active {
+  div {
+    width: 100%;
+    max-width: 540px;
+    line-height: 1.75;
+    letter-spacing: 0.1px;
+    padding: 3rem 1.5rem;
+    // @include laptops {
+    //   max-width: 340px;
+    // }
+    // @include phones {
+    //   max-width: 200px;
+    // }
+  }
+  h3 {
+    color: $yellow;
+  }
+}
