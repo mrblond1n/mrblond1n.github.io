@@ -1,0 +1,45 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -5px;
+  padding: rem(10px) rem(80px);
+  background: url("../img/bg/footer-bg.png");
+  color: white;
+  line-height: rem(24px);
+  @include phones {
+    flex-direction: column;
+    text-align: center;
+    padding: rem(10px) rem(10px);
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+a[href^="tel:"] {
+  color: #e45028;
+}
+
+address {
+  font-style: normal;
+  font-weight: 500;
+}
+
+.social__list {
+  display: flex;
+}
+
+.social__item:not(:first-of-type) {
+  margin-left: rem(20px);
+}
+
+.social__icon {
+  transition: .2s;
+  &:hover {
+    fill: #fff;
+  }
+}

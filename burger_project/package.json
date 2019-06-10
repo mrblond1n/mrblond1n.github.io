@@ -1,0 +1,32 @@
+{
+  "name": "burger_project",
+  "version": "1.0.0",
+  "description": "Burger theme by LoftSchool",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-rm": "^2.0.0",
+    "gulp-smile-px2rem": "^0.1.0",
+    "gulp-sass-glob": "^1.0.9",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-svgo": "^2.1.1",
+    "node-sass": "^4.12.0",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
