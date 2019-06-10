@@ -1,5 +1,5 @@
 .team {
-  background: url("../img/bg/team-bg.png") center (center / cover) no-repeat;
+  background: url("./img/bg/team-bg.png") center (center / cover) no-repeat;
   display: flex;
   justify-content: flex-end;
 }
@@ -54,7 +54,7 @@
 }
 
 .member__photo {
-  background: url("../img/people/aphex.png") center (center / cover) no-repeat;
+  background: url("./img/people/aphex.png") center (center / cover) no-repeat;
   height: 100px;
   width: 100px;
   flex: none;

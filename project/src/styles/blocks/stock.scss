@@ -1,5 +1,5 @@
 .stock {
-  background: url("../img/bg/menu-bg.png") center (center / cover) no-repeat;
+  background: url("./img/bg/menu-bg.png") center (center / cover) no-repeat;
   display: flex;
   justify-content: space-between;
   color: white;
@@ -12,15 +12,15 @@
 }
 
 .stock__item--meat {
-  background: url("../img/bg/menu-bg1.png") center (center / cover) no-repeat;
+  background: url("./img/bg/menu-bg1.png") center (center / cover) no-repeat;
 }
 
 .stock__item--vegan {
-  background: url("../img/bg/menu-bg2.png") center (center / cover) no-repeat;
+  background: url("./img/bg/menu-bg2.png") center (center / cover) no-repeat;
 }
 
 .stock__item--diet {
-  background: url("../img/bg/menu-bg3.png") center (center / cover) no-repeat;
+  background: url("./img/bg/menu-bg3.png") center (center / cover) no-repeat;
 }
 
 .stock__item h3 {
