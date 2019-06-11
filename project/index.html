@@ -10,39 +10,8 @@
 </head>
 
 <body>
-  <div class="nav-menu-fullscreen deactive">
-    <svg class="nav-menu-fullscreen__logo" width="100" height="100">
-      <use xlink:href="img/userSprite.svg#logo-icon"></use>
-    </svg>
-    <ul class="nav-menu-fullscreen__list">
-      <li class="nav-menu-fullscreen__item">
-        <a href="#" class="nav-menu__link">О нас</a>
-      </li>
-      <li class="nav-menu-fullscreen__item">
-        <a href="#" class="nav-menu__link">бургеры</a>
-      </li>
-      <li class="nav-menu-fullscreen__item">
-        <a href="#" class="nav-menu__link">Команда</a>
-      </li>
-      <li class="nav-menu-fullscreen__item">
-        <a href="#" class="nav-menu__link">Меню</a>
-      </li>
-      <li class="nav-menu-fullscreen__item">
-        <a href="#" class="nav-menu__link">Отзывы</a>
-      </li>
-      <li class="nav-menu-fullscreen__item">
-        <a href="#" class="nav-menu__link">Контакты</a>
-      </li>
-    </ul>
-    <button type="button" class="close-btn" id="close-btn__nav-menu">
-      <svg fill="#fff" width="35" height="35">
-        <use xlink:href="img/userSprite.svg#fsz-menu__btn-close"></use>
-      </svg>
-    </button>
-  </div>
 
   <div class="wrapper">
-
     <div class="maincontent">
 
     <section class="section hero activePage">
@@ -77,7 +46,7 @@
                 </li>
               </ul>
             </nav>
-            <button type="button" class="btn btn--margin-left">Заказать</button>
+            <button type="button" class="btn btn--margin-left" data-scroll-to="7">Заказать</button>
             <button type="button" id="menu-hamburger" class="menu-hamburger btn--none-decor">
               <svg fill="#fff" width="24" height="22">
                 <use xlink:href="img/userSprite.svg#menu-hamburger"/>
@@ -96,7 +65,7 @@
             </div>
           </div>
         </div>
-        <a href="#about" class="down-arrow">
+        <a href="#" class="down-arrow" data-scroll-to="1">
           <svg fill="#fff" width="30" height="20">
             <use xlink:href="img/sprite.svg#arrow-scroll"></use>
           </svg>
@@ -240,7 +209,7 @@
                 помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
                 <div class="burger-slider__price">
                   <h3><span>500</span> Рублей</h3>
-                  <button class="btn btn--margin-left">Заказать</button>
+                  <button class="btn btn--margin-left btn--margin-top" data-scroll-to="7">Заказать</button>
                 </div>
               </div>
             </div>
@@ -330,7 +299,7 @@
                 помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
                 <div class="burger-slider__price">
                   <h3><span>400</span> Рублей</h3>
-                  <button class="btn btn--margin-left">Заказать</button>
+                  <button class="btn btn--margin-left btn--margin-top" data-scroll-to="7">Заказать</button>
                 </div>
               </div>
             </div>
@@ -420,7 +389,7 @@
                 помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
                 <div class="burger-slider__price">
                   <h3><span>500</span> Рублей</h3>
-                  <button class="btn btn--margin-left">Заказать</button>
+                  <button class="btn btn--margin-left btn--margin-top" data-scroll-to="7">Заказать</button>
                 </div>
               </div>
             </div>
@@ -510,7 +479,7 @@
                 помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
                 <div class="burger-slider__price">
                   <h3><span>500</span> Рублей</h3>
-                  <button class="btn btn--margin-left">Заказать</button>
+                  <button class="btn btn--margin-left btn--margin-top" data-scroll-to="7">Заказать</button>
                 </div>
               </div>
             </div>
@@ -600,14 +569,13 @@
                 помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
                 <div class="burger-slider__price">
                   <h3><span>500</span> Рублей</h3>
-                  <button class="btn btn--margin-left">Заказать</button>
+                  <button class="btn btn--margin-left btn--margin-top" data-scroll-to="7">Заказать</button>
                 </div>
               </div>
             </div>
           </li>
         </ul>
       </div>
-      
 
         <div class="burger-slider__arrow-left nav-arrow">
           <button class="btn btn--bg-transparent">
@@ -1029,20 +997,6 @@
       </div>
     </section>
 
-    <div class="success-order">
-      <div class="success-order__message">
-        Заказ принят!
-        <button type="button" id="close__success-message" class="btn">Закрыть</button>
-      </div>
-    </div>
-    <div class="failed-order">
-
-      <div class="failed-order__message">
-        Для заказа заполните необходимые поля
-        <button type="button" id="close__failed-message" class="btn">Закрыть</button>
-      </div>
-    </div>
-
     <section class="section map">
       <img src="./img/content/map.png" alt="" width="100%" height="100%">
       <footer class="footer">
@@ -1076,7 +1030,7 @@
             <li class="social__item">
               <a href="#">
                 <svg fill="#5a5a5a" width="20" height="20" class="social__icon">
-                  <use xlink:href="img/sprite.svg#tw"></use>
+                  <use xlink:href="img/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
@@ -1086,38 +1040,83 @@
     </section>
 
     </div>
-
   </div>
+  
+  <div class="popUp-messanges">
+    <div class="nav-menu-fullscreen deactive">
+      <svg class="nav-menu-fullscreen__logo" width="100" height="100">
+        <use xlink:href="img/userSprite.svg#logo-icon"></use>
+      </svg>
+      <ul class="nav-menu-fullscreen__list">
+        <li class="nav-menu-fullscreen__item">
+          <a href="#" class="nav-menu__link">О нас</a>
+        </li>
+        <li class="nav-menu-fullscreen__item">
+          <a href="#" class="nav-menu__link">бургеры</a>
+        </li>
+        <li class="nav-menu-fullscreen__item">
+          <a href="#" class="nav-menu__link">Команда</a>
+        </li>
+        <li class="nav-menu-fullscreen__item">
+          <a href="#" class="nav-menu__link">Меню</a>
+        </li>
+        <li class="nav-menu-fullscreen__item">
+          <a href="#" class="nav-menu__link">Отзывы</a>
+        </li>
+        <li class="nav-menu-fullscreen__item">
+          <a href="#" class="nav-menu__link">Контакты</a>
+        </li>
+      </ul>
+      <button type="button" class="close-btn" id="close-btn__nav-menu">
+        <svg fill="#fff" width="35" height="35">
+          <use xlink:href="img/userSprite.svg#fsz-menu__btn-close"></use>
+        </svg>
+      </button>
+    </div>
 
-  <ul class="fixed-menu">
-    <li class="fixed-nav-menu__item">
-      <a href="#" class="fixed-nav-menu__link" data-scroll-to="0"></a>
-    </li>
-    <li class="fixed-nav-menu__item">
-      <a href="#" class="fixed-nav-menu__link" data-scroll-to="1"></a>
-    </li>
-    <li class="fixed-nav-menu__item">
-      <a href="#" class="fixed-nav-menu__link" data-scroll-to="2"></a>
-    </li>
-    <li class="fixed-nav-menu__item">
-      <a href="#" class="fixed-nav-menu__link" data-scroll-to="3"></a>
-    </li>
-    <li class="fixed-nav-menu__item">
-      <a href="#" class="fixed-nav-menu__link" data-scroll-to="4"></a>
-    </li>
-    <li class="fixed-nav-menu__item">
-      <a href="#" class="fixed-nav-menu__link" data-scroll-to="5"></a>
-    </li>
-    <li class="fixed-nav-menu__item">
-      <a href="#" class="fixed-nav-menu__link" data-scroll-to="6"></a>
-    </li>
-    <li class="fixed-nav-menu__item">
-      <a href="#" class="fixed-nav-menu__link" data-scroll-to="7"></a>
-    </li>
-    <li class="fixed-nav-menu__item">
-      <a href="#" class="fixed-nav-menu__link" data-scroll-to="8"></a>
-    </li>
-  </ul>
+    <div class="success-order">
+      <div class="success-order__message">
+        Заказ принят!
+        <button type="button" id="close__success-message" class="btn">Закрыть</button>
+      </div>
+    </div>
+    <div class="failed-order">
+      <div class="failed-order__message">
+        Для заказа заполните необходимые поля
+        <button type="button" id="close__failed-message" class="btn">Закрыть</button>
+      </div>
+    </div>
+
+      <ul class="fixed-menu">
+        <li class="fixed-nav-menu__item">
+          <a href="#" class="fixed-nav-menu__link" data-scroll-to="0"></a>
+        </li>
+        <li class="fixed-nav-menu__item">
+          <a href="#" class="fixed-nav-menu__link" data-scroll-to="1"></a>
+        </li>
+        <li class="fixed-nav-menu__item">
+          <a href="#" class="fixed-nav-menu__link" data-scroll-to="2"></a>
+        </li>
+        <li class="fixed-nav-menu__item">
+          <a href="#" class="fixed-nav-menu__link" data-scroll-to="3"></a>
+        </li>
+        <li class="fixed-nav-menu__item">
+          <a href="#" class="fixed-nav-menu__link" data-scroll-to="4"></a>
+        </li>
+        <li class="fixed-nav-menu__item">
+          <a href="#" class="fixed-nav-menu__link" data-scroll-to="5"></a>
+        </li>
+        <li class="fixed-nav-menu__item">
+          <a href="#" class="fixed-nav-menu__link" data-scroll-to="6"></a>
+        </li>
+        <li class="fixed-nav-menu__item">
+          <a href="#" class="fixed-nav-menu__link" data-scroll-to="7"></a>
+        </li>
+        <li class="fixed-nav-menu__item">
+          <a href="#" class="fixed-nav-menu__link" data-scroll-to="8"></a>
+        </li>
+      </ul>
+  </div>
 
   <script src="main.min.js"></script>
 </body>
