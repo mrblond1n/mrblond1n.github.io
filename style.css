@@ -6,9 +6,18 @@
 
 body, html {
   width: 100%;
-  font-size: 16px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-decoration: underline;
 }
 
 .container {
@@ -18,15 +27,51 @@ body, html {
 
 .container-ru {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background: #ffff40;
+}
+
+.container-ru a{
+  color: #000;
+  transition: .4s;
+}
+.container-ru a:hover {
+  color: #4020ff;
 }
 
 .container-eng {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  color: #fff;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: #ffff40;
   background: #000;
+}
+
+.container-eng a {
+  color: #ffff40;
+  transition: .4s;
+}
+
+.container-eng a:hover {
+  color: #60ffa0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 35px;
+}
+
+span {
+  background: #ff2020;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.content__contact-item {
+  margin: 5px;
 }
