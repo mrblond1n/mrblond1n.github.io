@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+  <title>Wedding</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flipclock@0.8.2/dist/flipclock.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flipclock@0.8.2/dist/flipclock.min.js"
+    integrity="sha256-BiezSH09N4/rvsbi2M+VY0et7UQYP3VjtbdFHo46N1g=" crossorigin="anonymous"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=3a3c5553-5ee4-4e38-bdde-21145eabbded&lang=ru_RU"
+      type="text/javascript"></script>
+  <link rel="stylesheet" href="main.min.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="maincontent">
+      <section class="section menu section--active">
+        <header class="header container">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#" class="menu__link">Время</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">О событии</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Организационные вопросы</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Расписание</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">ЗАГС</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Ресторан</a></li>
+          </ul>
+        </header>
+        <div class="clock-container container">
+          <div class="counter">
+            <div class="clock" style="margin:4em;"></div>
+          </div>
+        </div>
+
+        <div class="scrollToBottom">
+          Листайте вниз
+          <div class="scrollToBottom__arrow">
+            <svg id="down-arrow">
+              <use xlink:href="./img/sprite.svg#icons--cloud-computing"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section about-us">
+        <div class="about-us__left-side">
+          <h2>Жених</h2>
+          <div class="about-us__photo about-us__photo-hus"></div>
+          <h2>Никита</h2>
+        </div>
+        <div class="about-us__right-side">
+          <h2>Невеста</h2>
+          <div class="about-us__photo about-us__photo-wif"></div>
+          <h2>Анюта</h2>
+        </div>
+      </section>
+      
+      <section class="section information">
+        <div class="postcard">
+          <h2>Wedding Day!</h2>
+          <div class="postcard__content">
+            <p>Мы будем рады видеть Вас на нашей росписи, которая состоится <span>08.08.2019 г.</span><br>
+              Сбор гостей в <span>15:00</span> во Дворце бракосочетания ВДНХ.<br>
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section question">
+        <div class="question__content">
+          <h2>Дресс-код</h2>
+          <p>Уважаемые гости, на нашем мероприятии приветствуется дресс-код <span>'Coctail'</span>, <br> так же мы будем вам
+            очень признательны, если в своём наряде Вы выберете пастельные оттенки.</p>
+          примеры палитры:
+          <ul class="color__list">
+            <li class="color__item color__item--first">
+              <svg>
+                <use xlink:href="./img/sprite.svg#icons--paintbrush"></use>
+              </svg>
+            </li>
+            <li class="color__item color__item--second">
+              <svg>
+                <use xlink:href="./img/sprite.svg#icons--paintbrush"></use>
+              </svg>
+            </li>
+            <li class="color__item color__item--third">
+              <svg>
+                <use xlink:href="./img/sprite.svg#icons--paintbrush"></use>
+              </svg>
+            </li>
+            <li class="color__item color__item--fourth">
+              <svg>
+                <use xlink:href="./img/sprite.svg#icons--paintbrush"></use>
+              </svg>
+            </li>
+            <li class="color__item color__item--fifth">
+              <svg>
+                <use xlink:href="./img/sprite.svg#icons--paintbrush"></use>
+              </svg>
+            </li>
+            <li class="color__item color__item--sixth">
+              <svg>
+                <use xlink:href="./img/sprite.svg#icons--paintbrush"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section map">
+
+        <!-- <div class="block meet-point">
+          <div class="block__photo meet-point__photo">
+            <img src="./img/dvorec.jpg" alt="dvorec">
+          </div>
+          <div class="block__desc meet-point__desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, commodi magni esse laudantium, nulla tempora quibusdam, minima praesentium nesciunt assumenda culpa corporis nam? Laboriosam quam asperiores soluta dolor consequuntur, impedit, architecto similique minima quibusdam provident, animi quidem consectetur excepturi iste dignissimos culpa ea fugit rem alias ad. Sunt, iure voluptatibus!
+          </div>
+        </div>
+        <div class="block restaurant">
+          <div class="block__desc restaurant__desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro enim dignissimos laudantium officia alias commodi blanditiis assumenda fugit modi mollitia odit quisquam quis, numquam sint, corporis voluptates reprehenderit! Voluptatibus, quo!
+          </div>
+          <div class="block__photo restaurant__photo">
+            <img src="./img/dvorec.jpg" alt="dvorec">
+          </div>
+        </div>
+        <div class="more-info">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis sunt molestiae voluptates aliquid ipsa id, numquam dicta fuga beatae eaque quae laboriosam dolor impedit iusto, error quo suscipit libero nesciunt?
+        </div> -->
+        <div id="map"></div>
+      </section>
+    </div>
+  </div>
+  <ul class="nav-button__list">
+    <li class="nav-button__item nav-button__item--active"></li>
+    <li class="nav-button__item"></li>
+    <li class="nav-button__item"></li>
+    <li class="nav-button__item"></li>
+    <li class="nav-button__item"></li>
+  </ul>
+
+
+  <script src="main.min.js"></script>
+</body>
+</html>
