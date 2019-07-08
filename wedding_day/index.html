@@ -20,12 +20,12 @@
       <section class="section menu section--active">
         <header class="header container">
           <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link">Время</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">О событии</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Организационные вопросы</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Расписание</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">ЗАГС</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Ресторан</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Мы</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Событие</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Дресс-код</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Подробности</a></li>
+            <li class="menu__item"><a href="#" class="menu__link"></a></li>
+            <li class="menu__item"><a href="#" class="menu__link"></a></li>
           </ul>
         </header>
         <div class="clock-container container">
@@ -47,12 +47,12 @@
       <section class="section about-us">
         <div class="about-us__left-side">
           <h2>Жених</h2>
-          <div class="about-us__photo about-us__photo-hus"></div>
+          <div class="about-us__photo about-us__photo--nik"></div>
           <h2>Никита</h2>
         </div>
         <div class="about-us__right-side">
           <h2>Невеста</h2>
-          <div class="about-us__photo about-us__photo-wif"></div>
+          <div class="about-us__photo about-us__photo--ann"></div>
           <h2>Анюта</h2>
         </div>
       </section>
@@ -71,9 +71,9 @@
       <section class="section question">
         <div class="question__content">
           <h2>Дресс-код</h2>
-          <p>Уважаемые гости, на нашем мероприятии приветствуется дресс-код <span>'Coctail'</span>, <br> так же мы будем вам
-            очень признательны, если в своём наряде Вы выберете пастельные оттенки.</p>
-          примеры палитры:
+          <p>Уважаемые гости,<br> на нашем мероприятии приветствуется дресс-код <span>'Coctail'</span>, <br> так же мы будем вам
+            очень признательны, <br> если в своём наряде Вы выберете пастельные оттенки.</p>
+          Несколько примеров палитры:
           <ul class="color__list">
             <li class="color__item color__item--first">
               <svg>
@@ -109,28 +109,52 @@
         </div>
       </section>
 
-      <section class="section map">
-
-        <!-- <div class="block meet-point">
-          <div class="block__photo meet-point__photo">
-            <img src="./img/dvorec.jpg" alt="dvorec">
-          </div>
-          <div class="block__desc meet-point__desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, commodi magni esse laudantium, nulla tempora quibusdam, minima praesentium nesciunt assumenda culpa corporis nam? Laboriosam quam asperiores soluta dolor consequuntur, impedit, architecto similique minima quibusdam provident, animi quidem consectetur excepturi iste dignissimos culpa ea fugit rem alias ad. Sunt, iure voluptatibus!
-          </div>
+      <section class="section contact-slider">
+        <div class="contact-slider__container">
+          <ul class="contact-slider__list">
+            <li class="contact-slider__item contact-slider__item--active">
+              <div class="contact-slider__content contact-slider__content--meet-point">
+                <h3 class="contact-slider__title">Утро</h3>
+                <p class="contact-slider__desc">
+                  Если вы желаете поучавствовать в сборах жениха и невесты, то это можно сделать по адресу <br>
+                  <u>Москва, Звёздный бульвар, 22к1</u> <br>
+                  к 14:00
+                </p>
+              </div>
+            </li>
+            <li class="contact-slider__item">
+              <div class="contact-slider__content--map">
+                <h3 class="contact-slider__title">День</h3>
+                <div id="map"></div>
+              </div>
+            </li>
+            <li class="contact-slider__item">
+              <div class="contact-slider__content contact-slider__content--restaurant">
+                <h3 class="contact-slider__title">Вечер</h3>
+                <p class="contact-slider__desc">
+                  После прогулки и фотосессии ждем Вас в кафе по адресу <br>
+                  <u>Проспект Мира, д. 119, стр. 422 (ВДНХ, павильон № 422,
+                  справа от «Ракеты» и павильона «Космос»)</u> <br>
+                  <span>Московское небо</span>
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="block restaurant">
-          <div class="block__desc restaurant__desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro enim dignissimos laudantium officia alias commodi blanditiis assumenda fugit modi mollitia odit quisquam quis, numquam sint, corporis voluptates reprehenderit! Voluptatibus, quo!
-          </div>
-          <div class="block__photo restaurant__photo">
-            <img src="./img/dvorec.jpg" alt="dvorec">
-          </div>
-        </div>
-        <div class="more-info">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis sunt molestiae voluptates aliquid ipsa id, numquam dicta fuga beatae eaque quae laboriosam dolor impedit iusto, error quo suscipit libero nesciunt?
-        </div> -->
-        <div id="map"></div>
+        <ul class="contact-slider__nav-btns__list">
+          <li class="contact-slider__nav-btns__item">
+            <img src="./img/icons/heartPlaceHolder.svg" alt="map" class="contact-slider__nav-btns__icon">
+            Кликни
+          </li>
+          <li class="contact-slider__nav-btns__item">
+            <img src="./img/icons/rings.svg" alt="meet point" class="contact-slider__nav-btns__icon">
+            Кликни
+          </li>
+          <li class="contact-slider__nav-btns__item">
+            <img src="./img/icons/coffee.svg" alt="restaurant" class="contact-slider__nav-btns__icon">
+            Кликни
+          </li>
+        </ul>
       </section>
     </div>
   </div>
