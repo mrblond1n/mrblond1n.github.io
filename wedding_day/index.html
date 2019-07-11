@@ -18,30 +18,34 @@
   <div class="wrapper">
     <div class="maincontent">
       <section class="section menu section--active">
-        <header class="header container">
-          <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link">Мы</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Событие</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Дресс-код</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Подробности</a></li>
-            <li class="menu__item"><a href="#" class="menu__link"></a></li>
-            <li class="menu__item"><a href="#" class="menu__link"></a></li>
-          </ul>
-        </header>
-        <div class="clock-container container">
-          <div class="counter">
-            <div class="clock" style="margin:4em;"></div>
+        <div class="menu__container container">
+          <header class="header">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="#" class="menu__link">Мы</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Событие</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Дресс-код</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Пожелания</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Подробности</a></li>
+              <li class="menu__item"><a href="#" class="menu__link"></a></li>
+              <li class="menu__item"><a href="#" class="menu__link"></a></li>
+            </ul>
+          </header>
+          <div class="clock-container">
+            <div class="counter">
+              <div class="clock" style="margin:4em;"></div>
+            </div>
+          </div>
+          
+          <div class="scrollToBottom">
+            Листайте вниз
+            <div class="scrollToBottom__arrow">
+              <svg id="down-arrow">
+                <use xlink:href="./img/sprite.svg#icons--cloud-computing" />
+              </svg>
+            </div>
           </div>
         </div>
 
-        <div class="scrollToBottom">
-          Листайте вниз
-          <div class="scrollToBottom__arrow">
-            <svg id="down-arrow">
-              <use xlink:href="./img/sprite.svg#icons--cloud-computing"/>
-            </svg>
-          </div>
-        </div>
       </section>
       
       <section class="section about-us">
@@ -58,18 +62,20 @@
       </section>
       
       <section class="section information">
-        <div class="postcard">
-          <h2>Wedding Day!</h2>
-          <div class="postcard__content">
-            <p>Мы будем рады видеть Вас на нашей росписи, которая состоится <span>08.08.2019 г.</span><br>
-              Сбор гостей в <span>15:00</span> во Дворце бракосочетания ВДНХ.<br>
-            </p>
+        <div class="container">
+          <div class="postcard">
+            <h2>Wedding Day!</h2>
+            <div class="postcard__content">
+              <p>Мы будем рады видеть Вас на нашей росписи, которая состоится <span>08.08.2019 г.</span><br>
+                Сбор гостей в <span>15:00</span> во Дворце бракосочетания ВДНХ.<br>
+              </p>
+            </div>
           </div>
         </div>
       </section>
       
       <section class="section question">
-        <div class="question__content">
+        <div class="question__content container">
           <h2>Дресс-код</h2>
           <p>Уважаемые гости,<br> на нашем мероприятии приветствуется дресс-код <span>'Coctail'</span>, <br> так же мы будем вам
             очень признательны, <br> если в своём наряде Вы выберете пастельные оттенки.</p>
@@ -109,12 +115,29 @@
         </div>
       </section>
 
+      <section class="section wishes">
+        <div class="wishes__container container">
+          <h2>Если вы хотели нам что-то подарить...</h2>
+          <div class="wishes__content">
+            <svg class="svg-absolute">
+              <use xlink:href="./img/sprite.svg#icons--present"/>
+            </svg>
+            С радостью примем от Вас денежные подарки!
+          </div>
+          <div class="wishes__flower">
+            А так же, в связи с нашим дальнейшим свадебным путешествием, просим Вас не дарить срезанные живые цветы!
+            <div class="wishes__flower--danger">* Если всё же живые цветы: только не лилии, во имя аллергической реакции.</div>
+            <u>Спасибо за понимание!</u>
+          </div>
+        </div>
+      </section>
+
       <section class="section contact-slider">
         <div class="contact-slider__container">
           <ul class="contact-slider__list">
             <li class="contact-slider__item contact-slider__item--active">
               <div class="contact-slider__content contact-slider__content--meet-point">
-                <h3 class="contact-slider__title">Утро</h3>
+                <h2 class="contact-slider__title">Утро</h2>
                 <p class="contact-slider__desc">
                   Если вы желаете поучавствовать в сборах жениха и невесты, то это можно сделать по адресу <br>
                   <u>Москва, Звёздный бульвар, 22к1</u> <br>
@@ -124,18 +147,18 @@
             </li>
             <li class="contact-slider__item">
               <div class="contact-slider__content--map">
-                <h3 class="contact-slider__title">День</h3>
+                <h2 class="contact-slider__title">День</h2>
                 <div id="map"></div>
               </div>
             </li>
             <li class="contact-slider__item">
               <div class="contact-slider__content contact-slider__content--restaurant">
-                <h3 class="contact-slider__title">Вечер</h3>
+                <h2 class="contact-slider__title">Вечер</h2>
                 <p class="contact-slider__desc">
-                  После прогулки и фотосессии ждем Вас на <u>чай с тортом</u> в кафе по адресу <br>
-                  <u>Проспект Мира, д. 119, стр. 422 (ВДНХ, павильон № 422,
-                  справа от «Ракеты» и павильона «Космос»)</u> <br>
-                  <span>Московское небо</span>
+                  После прогулки и фотосессии ждем Вас на <u>пиццу и вино</u> в кафе по адресу <br>
+                  <u>ВДНХ, строение 619
+                  (Сразу за пав. «Армения»)</u> <br>
+                  <span>Osteria Italiana</span>
                 </p>
               </div>
             </li>
@@ -160,6 +183,7 @@
   </div>
   <ul class="nav-button__list">
     <li class="nav-button__item nav-button__item--active"></li>
+    <li class="nav-button__item"></li>
     <li class="nav-button__item"></li>
     <li class="nav-button__item"></li>
     <li class="nav-button__item"></li>
