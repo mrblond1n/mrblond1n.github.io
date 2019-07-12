@@ -42,7 +42,8 @@
     "gulp-uglify": "^3.0.2",
     "jquery-touchswipe": "^1.6.19",
     "mobile-detect": "^1.4.3",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.12.0",
+    "lodash.template": ">=4.5.0"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
