@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 18.2 14.8" style="enable-background:new 0 0 18.2 14.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#b0f7ff;stroke-width:0.5;stroke-miterlimit:10;}
+	.st1{fill:#61c4d9;stroke:#b0f7ff;stroke-width:0.5;stroke-miterlimit:10;}
+</style>
+<g id="доставка">
+	<path class="st0" d="M1.9,12h8.3c0.4,0,0.8-0.3,0.8-0.8V3c0-0.4-0.3-0.8-0.8-0.8H1.9C1.4,2.2,1.1,2.6,1.1,3v8.3
+		C1.1,11.7,1.4,12,1.9,12z"/>
+	<path class="st0" d="M11.2,3.8h3.6c0,0,0.4,0,0.9,0.5c0.2,0.2,0.4,0.5,0.7,0.9c0.5,0.7,1.1,1.4,1.1,1.4s0.4,0.4,0.4,1.1
+		s0,3.5,0,3.5s0.1,0.8-1.1,0.8c-0.9,0-5.1,0-6.1,0c-0.1,0-0.2,0-0.2,0"/>
+	<circle class="st1" cx="4.7" cy="12.4" r="1.9"/>
+	<circle class="st1" cx="14.1" cy="12.4" r="1.9"/>
+	<g>
+		<circle class="st1" cx="4" cy="4.2" r="3.7"/>
+		<polyline class="st0" points="2.7,5.5 4.1,4.4 4.1,1.9 		"/>
+		<circle cx="4" cy="4.4" r="0.5" fill="#b0f7ff"/>
+	</g>
+	<path class="st0" d="M17.7,8.1h-4c0,0-0.6-0.1-0.6-0.8s0-1.5,0-1.5s0-0.5,0.7-0.5c0.8,0,2.5,0,2.5,0"/>
+</g>
+</svg>

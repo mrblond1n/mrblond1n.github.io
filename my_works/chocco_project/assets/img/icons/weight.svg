@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 15.2 15.2" style="enable-background:new 0 0 15.2 15.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#b0f7ff;stroke-width:0.5;stroke-miterlimit:10;}
+</style>
+<g id="линейка">
+	<path class="st0" d="M10,3.8c0,0,0.3-3.4-3.8-3.4c-3.2,0-2.5,0-2.5,0S1,0.4,0.4,2.6c0,2,0,5.7,0,6.1s0.6,2.4,3.5,2.4"/>
+	<path class="st0" d="M14.7,6.8c0,0,0,4.6,0,6.3s-1.6,1.6-1.6,1.6s-5,0-6.4,0s-1.5-0.8-1.5-0.8s0-1.7,0-3.4s1.2-1.6,1.2-1.6
+		s4.7,0,6.2,0S14.7,8.2,14.7,6.8s-1.4-1.7-1.4-1.7s-7.4,0-9.3,0S0.8,3.7,0.8,3.7L0.4,3.2"/>
+	<line class="st0" x1="8.9" y1="10.8" x2="8.9" y2="9"/>
+	<line class="st0" x1="12.5" y1="10.8" x2="12.5" y2="8.9"/>
+	<ellipse cx="5.2" cy="2.9" rx="1" ry="0.4" fill="#b0f7ff"/>
+</g>
+</svg>
