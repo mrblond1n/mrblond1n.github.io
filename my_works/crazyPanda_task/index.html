@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>ColorPicker</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form class="btn-group" action="">
+        <input type="radio" id="textTarget" name="target" class="btn" />
+        <label for="textTarget" id="textChange">color</label>
+        <input type="radio" id="bgTarget" name="target" class="btn" />
+        <label for="bgTarget" id="backgroundChange">backgroundColor</label>
+      </form>
+      <div class="slider-container">
+        <div class="sliders">
+          <div id="red-slider"></div>
+          <div id="green-slider"></div>
+          <div id="blue-slider"></div>
+        </div>
+        <div id="result">
+          Честно говоря, я не сильно углублялся в изучение данной библиотеки,
+          однако задание выполнил:) Во время выполнения столкнулся со следующей
+          проблемой: я не мог сделать общую функцию для изменения цвета текста
+          или фона (должна была выглядеть как changeColor(target), но jquery
+          упорно не пропускал с таким решением, поэтому кода больше чем
+          задумывалось). Именно поэтому я пока больше делаю упор на изучение
+          чистого js.
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
